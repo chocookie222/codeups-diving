@@ -1,0 +1,29 @@
+@use "global" as *;
+
+.arrow {
+  position: relative;
+  width: 40px;
+  margin: 6px;
+}
+
+.arrow__line01 {
+  height: 1px;
+  background-color: $green40;
+}
+
+.arrow__line02 {
+  position: absolute;
+  top: 0;
+  right: 0;
+  transform-origin: right bottom;
+  width: 8px;
+  height: 1px;
+  background-color: $green40;
+  transform: rotate(45deg);
+}
+
+.arrow__line02.arrow__line02--left {
+  transform-origin: left bottom;
+  left: 0;
+  transform: rotate(-45deg);
+}

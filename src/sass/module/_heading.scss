@@ -1,1 +1,12 @@
 @use "global" as *;
+
+.heading {
+  color: $black0D;
+  font-size: 32px;
+  text-align: center;
+}
+
+.heading::first-letter {
+  color: $green40;
+  text-transform: capitalize;
+}

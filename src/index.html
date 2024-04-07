@@ -20,6 +20,11 @@
     <link rel="”icon”" href="" />
     <!-- css -->
     <link rel="stylesheet" href="./assets/css/style.css" />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"
+    />
     <!-- Google font -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -37,20 +42,165 @@
       <!-- mv -->
       <section class="top-mv"></section>
       <!-- campaign -->
-      <section id="campaign" class="campaign"></section>
+      <section id="campaign" class="top-campaign">
+        <div class="top-campaign__inner inner">
+          <h2 class="top-campaign__heading heading">campaign</h2>
+          <p class="top-campaign__sub-heading sub-heading">キャンペーン</p>
+          <div class="top-campaign__cards cards slider">
+            <div class="cards__item card">
+              <div class="card__img">
+                <img src="/assets/images/common/campaign01.jpg" alt="" />
+              </div>
+              <div class="card__body">
+                <div class="card__tag">ライセンス講習</div>
+                <div class="card__title">ライセンス取得</div>
+                <p class="card__text card__text--price">
+                  全部コミコミ(お一人様)
+                </p>
+                <div class="card__price">
+                  <div class="card__price-before">&yen;56,000</div>
+                  <div class="card__price-after">&yen;46,000</div>
+                </div>
+              </div>
+            </div>
+            <div class="cards__item card">
+              <div class="card__img">
+                <img src="/assets/images/common/campaign02.jpg" alt="" />
+              </div>
+              <div class="card__body">
+                <div class="card__tag">体験ダイビング</div>
+                <div class="card__title">貸切体験ダイビング</div>
+                <p class="card__text card__text--price">
+                  全部コミコミ(お一人様)
+                </p>
+                <div class="card__price">
+                  <div class="card__price-before">&yen;24,000</div>
+                  <div class="card__price-after">&yen;18,000</div>
+                </div>
+              </div>
+            </div>
+            <div class="cards__item card">
+              <div class="card__img">
+                <img src="/assets/images/common/campaign03.jpg" alt="" />
+              </div>
+              <div class="card__body">
+                <div class="card__tag">体験ダイビング</div>
+                <div class="card__title">ナイトダイビング</div>
+                <p class="card__text card__text--price">
+                  全部コミコミ(お一人様)
+                </p>
+                <div class="card__price">
+                  <div class="card__price-before">&yen;10,000</div>
+                  <div class="card__price-after">&yen;8,000</div>
+                </div>
+              </div>
+            </div>
+            <div class="cards__item card">
+              <div class="card__img">
+                <img src="/assets/images/common/campaign04.jpg" alt="" />
+              </div>
+              <div class="card__body">
+                <div class="card__tag">ファンダイビング</div>
+                <div class="card__title">貸切ファンダイビング</div>
+                <p class="card__text card__text--price">
+                  全部コミコミ(お一人様)
+                </p>
+                <div class="card__price">
+                  <div class="card__price-before">&yen;20,000</div>
+                  <div class="card__price-after">&yen;16,000</div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="top-campaign__button">
+            <a class="button">view&nbsp;more</a>
+          </div>
+        </div>
+      </section>
+      <!-- みぎ -->
+      <div class="arrow">
+        <div class="arrow__line01"></div>
+        <div class="arrow__line02"></div>
+      </div>
+      <!-- ひだり -->
+      <div class="arrow arrow--radius">
+        <div class="arrow__line01"></div>
+        <div class="arrow__line02 arrow__line02--left"></div>
+      </div>
+      <!-- blogカード -->
+      <div class="card">
+        <div class="card__inner">
+          <div class="card__img">
+            <img src="/assets/images/common/blog01.jpg" alt="" />
+          </div>
+          <div class="card__age-tag-time">
+            <div class="card__time">
+              <time datetime="2023-11-17">2023.11.17</time>
+            </div>
+          </div>
+          <div class="card__title">ウミガメと泳ぐ</div>
+          <div class="card__body">
+            <p class="card__text">
+              ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。
+              ここにテキストが入ります。ここにテキストが入ります。ここにテキスト
+            </p>
+          </div>
+        </div>
+      </div>
+
       <!-- about us -->
-      <section id="about" class="about"></section>
+      <section id="about" class="top-about">
+        <div class="top-about__inner inner">
+          <h2 class="top-about__heading heading">about&nbsp;us</h2>
+          <p class="top-about__sub-heading sub-heading">私たちについて</p>
+        </div>
+      </section>
       <!-- information -->
-      <section id="information" class="information"></section>
+      <section id="information" class="top-information"></section>
       <!-- blog -->
-      <section id="blog" class="blog"></section>
+      <section id="blog" class="top-blog"></section>
       <!-- voice -->
-      <section id="voice" class="voice"></section>
+      <section id="voice" class="top-voice">
+        <!-- voiceカード -->
+        <div class="card">
+          <div class="card__inner">
+            <div class="card__head">
+              <div class="card__head-left">
+                <div class="card__age-tag-time">
+                  <!-- <div class="card__time">
+                  <time datetime="2023-11-17">2023.11.17</time>
+                </div> -->
+                  <div class="card__age">20代(女性)</div>
+                  <div class="card__tag">ライセンス講習</div>
+                </div>
+                <div class="card__title">
+                  ここにタイトルが入ります。ここにタイトル
+                </div>
+              </div>
+              <div class="card__img">
+                <img src="/assets/images/common/blog01.jpg" alt="" />
+              </div>
+            </div>
+            <div class="card__body">
+              <p class="card__text">
+                ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。
+                ここにテキストが入ります。ここにテキストが入ります。ここにテキスト
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
       <!-- price -->
-      <section id="price" class="price"></section>
+      <section id="price" class="top-price"></section>
       <!-- contact -->
-      <section id="contact" class="contact"></section>
+      <section id="contact" class="top-contact"></section>
     </main>
     <footer class="footer"></footer>
+    <script
+      src="https://code.jquery.com/jquery-3.4.1.min.js"
+      integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+      crossorigin="anonymous"
+    ></script>
+    <script src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
   </body>
 </html>
