@@ -1,1 +1,18 @@
 @use "global" as *;
+
+.text {
+  color: $black0D;
+  font-size: 16px;
+  line-height: 1.5;
+}
+
+.text.text--large.text--large {
+  color: $green40;
+  font-size: 40px;
+  line-height: 1;
+  @include mq("md") {
+    color: $white;
+    font-size: 80px;
+    line-height: 1.25;
+  }
+}

@@ -1,0 +1,81 @@
+@use "global" as *;
+
+.pc-nav {
+  height: inherit;
+}
+
+.pc-nav__items {
+  display: flex;
+  align-items: center;
+  height: inherit;
+}
+
+.pc-nav__item {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: inherit;
+  padding-right: 20px;
+  padding-left: 20px;
+  cursor: pointer;
+}
+
+.pc-nav__en {
+  font-size: 18px;
+}
+
+.pc-nav__en::first-letter {
+  text-transform: capitalize;
+}
+
+.pc-nav__jp {
+  font-size: 10px;
+  margin-bottom: 4px;
+  font-family: $third-font-family;
+}
+
+.pc-nav__en,
+.pc-nav__jp {
+  color: $white;
+  text-align: center;
+}
+
+.pc-nav__en.pc-nav__en--uppercase {
+  text-transform: uppercase;
+}
+
+.pc-nav__item a {
+  position: relative;
+}
+
+// .gnavi li a{
+//   /*線の基点とするためrelativeを指定*/
+// position: relative;
+// }
+
+.pc-nav__item.current a,
+.pc-nav__item a:hover {
+  color: $white;
+}
+
+.pc-nav__item a::after {
+  content: "";
+  /*絶対配置で線の位置を決める*/
+  position: absolute;
+  bottom: -4px;
+  // left: 10%;
+  /*線の形状*/
+  width: 100%;
+  height: 1px;
+  background: $white;
+  /*アニメーションの指定*/
+  transition: all 0.3s;
+  transform: scale(0, 1); /*X方向0、Y方向1*/
+  transform-origin: center top; /*上部中央基点*/
+}
+
+/*現在地とhoverの設定*/
+.pc-nav__item.current a::after,
+.pc-nav__item a:hover::after {
+  transform: scale(1, 1); /*X方向にスケール拡大*/
+}

@@ -1,1 +1,82 @@
 @use "global" as *;
+
+.drawer-menu {
+  display: none;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 8888;
+  background-color: $green40;
+  width: 100%;
+  height: 100vh;
+  overflow: scroll;
+  padding: 95px 15px 10px;
+}
+
+.drawer-menu__img {
+}
+
+.drawer-menu__items {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+.drawer-menu__left {
+  padding-left: 22px;
+}
+
+.drawer-menu__right {
+  padding-left: 22px;
+}
+
+.drawer-menu__item {
+}
+
+.drawer-menu__item.drawer-menu__item--bold {
+  position: relative;
+  margin-top: 16px;
+}
+
+.drawer-menu__left .drawer-menu__item.drawer-menu__item--bold:first-child,
+.drawer-menu__right .drawer-menu__item.drawer-menu__item--bold:first-child {
+  margin-top: 0;
+}
+
+.drawer-menu__item.drawer-menu__item--bold::before {
+  position: absolute;
+  content: "";
+  display: block;
+  width: 18px;
+  height: 18px;
+  left: -22px;
+  top: 50%;
+  transform: translateY(-50%);
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-image: url("/assets/images/common/drawer-hitode.png");
+}
+
+.drawer-menu__item.drawer-menu__item--bold.pp::before {
+  top: 30%;
+  @include mq("md") {
+    top: 50%;
+  }
+}
+
+.drawer-menu__item a {
+  display: inline-block;
+  color: $white;
+  font-size: 16px;
+  padding-top: 12px;
+  padding-bottom: 12px;
+  line-height: 1.125;
+  // width: inherit;
+  height: inherit;
+  cursor: pointer;
+}
+
+.drawer-menu__item.drawer-menu__item--bold a {
+  font-weight: $bold;
+}

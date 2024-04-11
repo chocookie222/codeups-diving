@@ -1,1 +1,140 @@
 @use "global" as *;
+
+.footer {
+  background-color: $green40;
+  width: 100%;
+  padding: 48px 0 56px;
+  @include mq("md") {
+    padding: 80px 0;
+  }
+}
+
+.footer__inner {
+  @include mq("md") {
+    max-width: 1080px;
+    width: 100%;
+    margin: 0 auto;
+  }
+}
+
+.footer__head {
+  @include mq("md") {
+    display: flex;
+    align-items: baseline;
+  }
+}
+
+.footer__logo {
+  width: 120px;
+  @include mq("md") {
+    width: 200px;
+  }
+}
+
+.footer__sns {
+  display: flex;
+  margin-top: 16px;
+  @include mq("md") {
+    margin-top: 0;
+    margin-left: 40px;
+  }
+}
+
+.footer__sns-fb {
+  width: 24px;
+  @include mq("md") {
+    width: 32px;
+  }
+}
+
+.footer__sns-insta {
+  margin-left: 16px;
+  width: 24px;
+  @include mq("md") {
+    width: 32px;
+  }
+}
+
+.footer-menu {
+}
+
+.footer-menu__img {
+}
+
+.footer-menu__items {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  margin-top: 40px;
+}
+
+.footer-menu__left {
+  padding-left: 22px;
+  @include mq("md") {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+.footer-menu__right {
+  padding-left: 22px;
+  @include mq("md") {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+.footer-menu__item {
+}
+
+.footer-menu__item.footer-menu__item--bold {
+  position: relative;
+  margin-top: 28px;
+}
+
+.footer-menu__left .footer-menu__item.footer-menu__item--bold:first-child,
+.footer-menu__right .footer-menu__item.footer-menu__item--bold:first-child {
+  margin-top: 0;
+}
+
+.footer-menu__item.footer-menu__item--bold::before {
+  position: absolute;
+  content: "";
+  display: block;
+  width: 18px;
+  height: 18px;
+  left: -22px;
+  top: 50%;
+  transform: translateY(-50%);
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-image: url("/assets/images/common/drawer-hitode.png");
+}
+
+.footer-menu__item a {
+  display: inline-block;
+  color: $white;
+  font-size: 16px;
+  padding-top: 12px;
+  padding-bottom: 12px;
+  // width: inherit;
+  height: inherit;
+  cursor: pointer;
+}
+
+.footer-menu__item.footer-menu__item--bold a {
+  font-weight: $bold;
+}
+
+.footer__small {
+  display: block;
+  color: $white;
+  font-size: 12px;
+  text-align: center;
+  margin-top: 40px;
+  @include mq("md") {
+    font-size: 14px;
+    margin-top: 80px;
+    text-align: center;
+  }
+}

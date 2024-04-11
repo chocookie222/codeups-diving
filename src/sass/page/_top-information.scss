@@ -1,1 +1,51 @@
 @use "global" as *;
+
+.top-information {
+  padding: 80px 0;
+  background-color: $greendd;
+  @include mq("md") {
+    padding: 100px 0 76px;
+  }
+}
+
+.top-information__inner {
+}
+
+.top-information__heading {
+}
+
+.top-information__sub-heading {
+  margin-top: 4px;
+}
+
+.top-information__body {
+  margin-top: 24px;
+  @include mq("md") {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin-top: 40px;
+  }
+}
+.top-information__img {
+}
+
+.top-information__contents {
+  margin-left: 45px;
+}
+
+.top-information__title {
+  color: $black0D;
+  font-size: 20px;
+  font-weight: $bold;
+  margin-top: 24px;
+  padding-bottom: 4px;
+  border-bottom: 1px solid $green40;
+}
+
+.top-information__text {
+  margin-top: 8px;
+}
+
+.top-information__button {
+  margin-top: 40px;
+}

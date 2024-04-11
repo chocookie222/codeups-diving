@@ -1,0 +1,54 @@
+@use "global" as *;
+
+.bgpoint.bgpoint--sango {
+  @include mq("md") {
+    position: absolute;
+    z-index: 100;
+    width: 194px;
+    bottom: -91px;
+    right: -97px;
+  }
+}
+
+.bgpoint.bgpoint--fish-blog {
+  position: absolute;
+  z-index: 100;
+  width: 437px;
+  top: -76px;
+  left: -80px;
+}
+
+.bgpoint.bgpoint--fish-voice {
+  position: absolute;
+  z-index: 100;
+  transform: scale(-1, 1);
+  width: 301px;
+  top: -120px;
+  left: -80px;
+}
+
+.bgpoint.bgpoint--tatsu {
+  @include mq("md") {
+    position: absolute;
+    z-index: 100;
+    width: 71px;
+    bottom: -95px;
+    right: 25px;
+  }
+}
+
+.bgpoint.bgpoint--fish-price {
+  position: absolute;
+  z-index: 100;
+  width: 437px;
+  bottom: -40px;
+  left: -80px;
+}
+
+.bgpoint.bgpoint--fish-contact {
+  position: absolute;
+  z-index: 100;
+  width: 301px;
+  top: -40px;
+  right: -59px;
+}

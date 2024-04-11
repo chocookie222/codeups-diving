@@ -1,1 +1,67 @@
 @use "global" as *;
+
+.top-price {
+  background: $greendd;
+
+  padding-top: 80px;
+  padding-bottom: 80px;
+}
+
+.top-price__inner {
+  @include mq("md") {
+    position: relative;
+  }
+}
+
+.top-price__heading {
+}
+
+.top-price__sub-heading {
+}
+
+.top-price__contents {
+  @include mq("md") {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: start;
+    gap: 93px;
+    margin-top: 40px;
+  }
+}
+
+.top-price__left {
+  @include mq("md") {
+    order: 1;
+  }
+}
+
+.top-price__right {
+  @include mq("md") {
+    order: 2;
+  }
+}
+
+.top-price__img {
+  display: block;
+  margin-top: 24px;
+  @include mq("md") {
+    margin-top: 0;
+  }
+}
+
+.top-price__price-list {
+  margin-top: 40px;
+}
+
+.top-price__price-list:first-child {
+  @include mq("md") {
+    margin-top: 0;
+  }
+}
+
+.top-price__button {
+  margin-top: 40px;
+  @include mq("md") {
+    margin-top: 80px;
+  }
+}

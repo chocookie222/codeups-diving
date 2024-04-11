@@ -1,7 +1,10 @@
 @use "global" as *;
 
 .top-campaign {
-  padding: 40px 0 80px;
+  padding-top: 40px;
+  @include mq("md") {
+    padding-top: 120px;
+  }
 }
 
 .top-campaign__inner {
@@ -11,13 +14,67 @@
 }
 
 .top-campaign__sub-heading {
+  margin-top: 4px;
+}
+
+.top-campaign__swiper {
+  padding-left: 15px;
 }
 
 .top-campaign__cards {
   margin-top: 24px;
 }
 
+.top-campaign__card {
+  width: 280px;
+}
+
 .top-campaign__button {
   margin-top: 40px;
-  text-align: center;
+  @include mq("md") {
+    margin-top: 80px;
+  }
+}
+
+// .swiper-slide img {
+//   aspect-ratio: 2 / 1;
+// }
+
+// .swiper-button-prev,
+// .swiper-button-next {
+//   @include mq("md") {
+//     width: 50px;
+//     height: 50px;
+//     border-radius: 50%;
+//     background-color: #000;
+//   }
+// }
+
+// .swiper-button-prev::after,
+// .swiper-button-next::after {
+//   @include mq("md") {
+//     position: absolute;
+//     top: 40%;
+//     left: 38%;
+//     width: 10px;
+//     height: 10px;
+//     content: "";
+//     transform: rotate(45deg);
+//     border-top: 2px solid #fff;
+//     border-right: 2px solid #fff;
+//   }
+// }
+
+// .swiper-button-prev::after {
+//   @include mq("md") {
+//     top: 40%;
+//     left: 44%;
+//     transform: rotate(-135deg);
+//   }
+// }
+
+.top-campaign__container {
+  margin-inline: auto;
+  max-width: 500px;
+  position: relative;
 }

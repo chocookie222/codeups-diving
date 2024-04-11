@@ -1,1 +1,39 @@
 @use "global" as *;
+
+.top-blog {
+  padding-top: 80px;
+  @include mq("md") {
+    padding-top: 100px;
+    // background: url(/assets/images/common/blog-bg.jpg);
+    // background-position: top center;
+    // background-repeat: no-repeat;
+  }
+}
+
+.top-blog__inner {
+  @include mq("md") {
+    position: relative;
+  }
+}
+
+.top-blog__heading {
+}
+
+.top-blog__sub-heading {
+  margin-top: 4px;
+}
+
+.top-blog__cards {
+  margin-top: 24px;
+  grid-template-columns: repeat(3, 1fr);
+  @include mq("md") {
+    margin-top: 80px;
+  }
+}
+
+.top-blog__button {
+  margin-top: 40px;
+  @include mq("md") {
+    margin-top: 80px;
+  }
+}

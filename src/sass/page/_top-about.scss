@@ -1,1 +1,92 @@
 @use "global" as *;
+
+.top-about {
+  padding: 80px 0 70px;
+  @include mq("md") {
+    padding: 140px 0 164px;
+  }
+}
+
+.top-about__inner {
+  @include mq("md") {
+    position: relative;
+  }
+}
+
+.top-about__heading {
+}
+
+.top-about__sub-heading {
+  margin-top: 4px;
+}
+
+.top-about__img {
+  position: relative;
+  padding-top: 50px;
+  @include mq("md") {
+    padding-top: 120px;
+  }
+}
+
+.top-about__img-up {
+  position: absolute;
+  width: 37.101%;
+  left: 0;
+  bottom: 18px;
+  @include mq("md") {
+  }
+}
+
+.top-about__img-up img {
+  object-fit: cover;
+}
+
+.top-about__img-down {
+  display: block;
+  width: 81.449%;
+  margin-right: 0;
+  margin-left: auto;
+  @include mq("md") {
+    max-width: 880px;
+    width: 81.481%;
+  }
+}
+
+.top-about__contents {
+  @include mq("md") {
+    position: absolute;
+    top: 306px;
+    right: 66px;
+    display: flex;
+    max-width: 880px;
+    margin-right: 0;
+    margin-left: auto;
+  }
+}
+.top-about__text--large {
+  margin-top: 40px;
+  @include mq("md") {
+    margin-top: 0;
+  }
+}
+
+.top-about__body {
+  @include mq("md") {
+    max-width: 400px;
+    margin-left: 40px;
+  }
+}
+
+.top-about__text {
+  margin-top: 16px;
+  @include mq("md") {
+    color: $white;
+  }
+}
+
+.top-about__button {
+  margin-top: 50px;
+  @include mq("md") {
+    margin-top: 40px;
+  }
+}

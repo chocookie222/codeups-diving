@@ -1,1 +1,142 @@
 @use "global" as *;
+
+.top-contact {
+  padding: 80px 0 100px;
+}
+
+.top-contact__inner {
+  @include mq("md") {
+    position: relative;
+  }
+}
+
+.top-contact__inner.inner {
+  @include mq("md") {
+    display: flex;
+    justify-content: space-between;
+    padding-left: 50px;
+    padding-right: 112px;
+  }
+}
+
+.top-contact__store-info {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 0 15px;
+  @include mq("md") {
+    padding: 0;
+  }
+}
+
+.top-contact__img {
+  width: 100%;
+  padding-bottom: 6px;
+  border-bottom: 1px solid $green40;
+  filter: drop-shadow(0px 4px 4px rgba($black00, 0.25));
+}
+
+.top-contact__img img {
+  width: 174px;
+  margin-right: auto;
+  margin-left: auto;
+  @include mq("md") {
+    width: 200px;
+  }
+}
+
+.top-contact__access {
+  @include mq("md") {
+    display: flex;
+    max-width: 490px;
+    width: 100%;
+    margin-top: 24px;
+  }
+}
+
+.top-contact__info-text {
+  text-align: center;
+  @include mq("md") {
+    text-align: left;
+  }
+}
+
+.top-contact__address,
+.top-contact__tel,
+.top-contact__bisiness-hours,
+.top-contact__holiday {
+  color: $black0D;
+  font-size: 16px;
+  text-shadow: 0px 4px 4px rgba($black0D, 0.25);
+}
+
+.top-contact__address {
+  margin-top: 16px;
+  @include mq("md") {
+    margin-top: 0;
+  }
+}
+
+.top-contact__tel,
+.top-contact__bisiness-hours,
+.top-contact__holiday {
+  margin-top: 4px;
+}
+
+.top-contact__map {
+  margin-top: 16px;
+  box-shadow: 0px 4px 4px rgba($black0D, 0.25);
+  @include mq("md") {
+    max-width: 273px;
+    margin-top: 0;
+    margin-left: 21px;
+  }
+}
+
+.top-contact__map img {
+  aspect-ratio: 295 / 160;
+  //   background-size: conra;
+  @include mq("md") {
+    aspect-ratio: 273 / 148;
+  }
+}
+
+.top-contact__contact-info {
+  @include mq("md") {
+    max-width: 396px;
+    width: 100%;
+    padding: 20px 0 19px 81px;
+    border-left: 1px solid $green40;
+  }
+}
+
+.top-contact__heading {
+  margin-top: 40px;
+  @include mq("md") {
+    font-size: 80px;
+  }
+}
+
+.top-contact__sub-heading {
+  margin-top: -22px;
+  text-shadow: 0px 4px 4px rgba($black0D, 0.25);
+  @include mq("md") {
+    margin-top: 0;
+  }
+}
+
+.top-contact__text {
+  color: $green40;
+  font-size: 14px;
+  text-align: center;
+  line-height: 1.285714285714286;
+  text-shadow: 0px 4px 4px rgba($black0D, 0.25);
+  @include mq("md") {
+    margin-top: 8px;
+  }
+}
+
+.top-contact__button {
+  margin-top: 40px;
+}

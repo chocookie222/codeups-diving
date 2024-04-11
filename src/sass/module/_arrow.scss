@@ -1,14 +1,17 @@
 @use "global" as *;
 
 .arrow {
+  display: inline-block;
   position: relative;
   width: 40px;
-  margin: 6px;
+  // margin: 6px 0 10px 8px;
+  margin-left: 8px;
+  margin-bottom: 4px;
 }
 
 .arrow__line01 {
   height: 1px;
-  background-color: $green40;
+  background-color: $white;
 }
 
 .arrow__line02 {
@@ -18,12 +21,6 @@
   transform-origin: right bottom;
   width: 8px;
   height: 1px;
-  background-color: $green40;
+  background-color: $white;
   transform: rotate(45deg);
-}
-
-.arrow__line02.arrow__line02--left {
-  transform-origin: left bottom;
-  left: 0;
-  transform: rotate(-45deg);
 }

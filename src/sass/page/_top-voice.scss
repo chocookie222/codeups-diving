@@ -1,1 +1,36 @@
 @use "global" as *;
+
+.top-voice {
+  padding: 80px 0;
+  @include mq("md") {
+    padding: 120px 0 140px;
+  }
+}
+
+.top-voice__inner {
+  @include mq("md") {
+    position: relative;
+  }
+}
+
+.top-voice__heading {
+}
+
+.top-voice__sub-heading {
+}
+
+.top-voice__cards {
+  margin-top: 40px;
+  @include mq("md") {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 40px;
+    margin-top: 40px;
+  }
+}
+
+.top-voice__button {
+  @include mq("md") {
+    margin-top: 80px;
+  }
+}

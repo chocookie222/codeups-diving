@@ -7,11 +7,17 @@
 
 .card__inner {
   padding: 16px 16px 24px;
+  @include mq("md") {
+    padding: 24px;
+  }
 }
 
 .card__head {
-  display: flex;
-  padding: 15px 16px 0;
+  display: grid;
+  grid-auto-flow: column;
+  align-items: end;
+  gap: 13px;
+  // padding: 15px 16px 0;
 }
 
 .card__head-left {
@@ -33,6 +39,7 @@
   color: $black0D;
   font-size: 12px;
   line-height: 1.5;
+  margin-top: 24px;
 }
 
 .card__tag {
@@ -64,6 +71,7 @@
   color: $black00;
   font-size: 16px;
   line-height: 1.5;
+  margin-top: 16px;
 }
 
 .card__text.card__text--price {
