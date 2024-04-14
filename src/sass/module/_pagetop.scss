@@ -1,0 +1,47 @@
+@use "global" as *;
+
+.pagetop {
+  width: 100%;
+  z-index: 2;
+  position: fixed;
+  right: rem(15);
+  bottom: 0;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  cursor: pointer;
+  transition: 0.3s;
+  /*デフォルトで非表示にする*/
+  opacity: 0;
+  visibility: hidden;
+  @include mq("md") {
+    right: rem(20);
+  }
+}
+
+.pagetop.active {
+  opacity: 1;
+  visibility: visible;
+}
+
+.pagetop.absolute {
+  position: absolute;
+  top: rem(-70);
+  bottom: auto;
+}
+
+.pagetop__img {
+  width: rem(48);
+  @include mq("md") {
+    width: rem(80);
+  }
+}
+
+.pagetop__img img {
+  width: 100%;
+  object-fit: cover;
+  aspect-ratio: 48 / 48;
+  @include mq("md") {
+    aspect-ratio: 80 / 80;
+  }
+}

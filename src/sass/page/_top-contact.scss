@@ -1,57 +1,86 @@
 @use "global" as *;
 
 .top-contact {
-  padding: 80px 0 100px;
-}
-
-.top-contact__inner {
+  padding: rem(83) 0 rem(103);
   @include mq("md") {
-    position: relative;
+    padding: rem(140) 0 rem(100);
   }
 }
 
-.top-contact__inner.inner {
+.top-contact__inner {
+  max-width: 600px;
+  width: 100%;
   @include mq("md") {
-    display: flex;
+    position: relative;
+    box-shadow: rem(4) rem(4) rem(10) rem(1) rgba($black00, 0.25);
+  }
+}
+
+.top-contact .top-contact__inner {
+  padding-left: rem(25);
+  padding-right: rem(25);
+  @include mq("md") {
+    max-width: 1080px;
+    display: grid;
+    grid-template-columns: 522fr 396fr;
+    // display: flex;
     justify-content: space-between;
-    padding-left: 50px;
-    padding-right: 112px;
+    margin: 0 auto;
+    padding: rem(82) rem(111) rem(80) rem(50);
   }
 }
 
 .top-contact__store-info {
-  display: flex;
-  flex-direction: column;
+  // display: flex;
+  // flex-direction: column;
+  display: grid;
   justify-content: center;
   align-items: center;
-  padding: 0 15px;
+  width: 100%;
+  padding: 0 rem(15);
   @include mq("md") {
     padding: 0;
+    padding-right: rem(82);
+    border-right: 1px solid $green40;
   }
 }
 
-.top-contact__img {
-  width: 100%;
-  padding-bottom: 6px;
-  border-bottom: 1px solid $green40;
-  filter: drop-shadow(0px 4px 4px rgba($black00, 0.25));
-}
-
-.top-contact__img img {
-  width: 174px;
+.top-contact__logo {
+  width: rem(174);
   margin-right: auto;
   margin-left: auto;
+  padding-bottom: rem(6);
+  filter: drop-shadow(rem(0) rem(4) rem(4) rgba($black00, 0.25));
   @include mq("md") {
-    width: 200px;
+    width: rem(200);
+    padding-bottom: rem(8);
+    filter: none;
+  }
+}
+
+.top-contact__logo img {
+  margin-right: auto;
+  margin-left: auto;
+  width: 100%;
+  object-fit: cover;
+  aspect-ratio: 174 / 65;
+  @include mq("md") {
+    width: rem(200);
+    aspect-ratio: 200 / 75;
   }
 }
 
 .top-contact__access {
+  border-top: 1px solid $green40;
   @include mq("md") {
-    display: flex;
+    display: grid;
+    // display: flex;
+    grid-template-columns: 146fr 273fr;
+
+    // gap: 21px;
     max-width: 490px;
     width: 100%;
-    margin-top: 24px;
+    padding-top: rem(24);
   }
 }
 
@@ -67,12 +96,17 @@
 .top-contact__bisiness-hours,
 .top-contact__holiday {
   color: $black0D;
-  font-size: 16px;
-  text-shadow: 0px 4px 4px rgba($black0D, 0.25);
+  font-size: rem(16);
+  font-family: $third-font-family;
+  letter-spacing: 0.005em;
+  text-shadow: rem(0) rem(4) rem(4) rgba($black0D, 0.25);
+  @include mq("md") {
+    text-shadow: none;
+  }
 }
 
 .top-contact__address {
-  margin-top: 16px;
+  margin-top: rem(16);
   @include mq("md") {
     margin-top: 0;
   }
@@ -81,22 +115,25 @@
 .top-contact__tel,
 .top-contact__bisiness-hours,
 .top-contact__holiday {
-  margin-top: 4px;
+  margin-top: rem(4);
 }
 
 .top-contact__map {
-  margin-top: 16px;
-  box-shadow: 0px 4px 4px rgba($black0D, 0.25);
+  margin-top: rem(16);
+  box-shadow: rem(0) rem(4) rem(4) rgba($black0D, 0.25);
   @include mq("md") {
     max-width: 273px;
+    width: 100%;
+    // max-height: 148px;
     margin-top: 0;
-    margin-left: 21px;
+    margin-left: rem(20);
   }
 }
 
 .top-contact__map img {
+  width: 100%;
+  object-fit: cover;
   aspect-ratio: 295 / 160;
-  //   background-size: conra;
   @include mq("md") {
     aspect-ratio: 273 / 148;
   }
@@ -106,37 +143,43 @@
   @include mq("md") {
     max-width: 396px;
     width: 100%;
-    padding: 20px 0 19px 81px;
-    border-left: 1px solid $green40;
+    padding: rem(20) 0 rem(19) rem(81);
   }
 }
 
 .top-contact__heading {
-  margin-top: 40px;
+  margin-top: rem(22);
   @include mq("md") {
-    font-size: 80px;
+    font-size: rem(80);
+    margin-top: 0;
   }
 }
 
 .top-contact__sub-heading {
-  margin-top: -22px;
-  text-shadow: 0px 4px 4px rgba($black0D, 0.25);
+  margin-top: rem(-24);
+  text-shadow: rem(0) rem(4) rem(4) rgba($black0D, 0.25);
   @include mq("md") {
     margin-top: 0;
+    text-shadow: none;
   }
 }
 
 .top-contact__text {
   color: $green40;
-  font-size: 14px;
+  font-size: rem(14);
   text-align: center;
   line-height: 1.285714285714286;
-  text-shadow: 0px 4px 4px rgba($black0D, 0.25);
+  text-shadow: rem(0) rem(4) rem(4) rgba($black0D, 0.25);
+  margin-top: rem(6);
   @include mq("md") {
-    margin-top: 8px;
+    margin-top: rem(8);
+    text-shadow: none;
   }
 }
 
 .top-contact__button {
-  margin-top: 40px;
+  margin-top: rem(40);
+  @include mq("md") {
+    margin-top: rem(35);
+  }
 }

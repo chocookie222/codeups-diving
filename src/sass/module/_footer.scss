@@ -3,9 +3,9 @@
 .footer {
   background-color: $green40;
   width: 100%;
-  padding: 48px 0 56px;
+  padding: rem(48) 0 rem(56);
   @include mq("md") {
-    padding: 80px 0;
+    padding: rem(80) 0;
   }
 }
 
@@ -25,33 +25,48 @@
 }
 
 .footer__logo {
-  width: 120px;
+  width: rem(120);
   @include mq("md") {
-    width: 200px;
+    width: rem(200);
+  }
+}
+
+.footer__logo-link img {
+  width: 100%;
+  object-fit: cover;
+  aspect-ratio: 120 / 45;
+  @include mq("md") {
+    aspect-ratio: 200 / 75;
   }
 }
 
 .footer__sns {
   display: flex;
-  margin-top: 16px;
+  margin-top: rem(16);
   @include mq("md") {
     margin-top: 0;
-    margin-left: 40px;
+    margin-left: rem(40);
   }
 }
 
+.footer__sns-link img {
+  width: 100%;
+  object-fit: cover;
+  aspect-ratio: 1 / 1;
+}
+
 .footer__sns-fb {
-  width: 24px;
+  width: rem(24);
   @include mq("md") {
-    width: 32px;
+    width: rem(32);
   }
 }
 
 .footer__sns-insta {
-  margin-left: 16px;
-  width: 24px;
+  margin-left: rem(16);
+  width: rem(24);
   @include mq("md") {
-    width: 32px;
+    width: rem(32);
   }
 }
 
@@ -64,11 +79,11 @@
 .footer-menu__items {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  margin-top: 40px;
+  margin-top: rem(30);
 }
 
 .footer-menu__left {
-  padding-left: 22px;
+  padding-left: rem(22);
   @include mq("md") {
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -76,7 +91,7 @@
 }
 
 .footer-menu__right {
-  padding-left: 22px;
+  padding-left: rem(34);
   @include mq("md") {
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -88,7 +103,7 @@
 
 .footer-menu__item.footer-menu__item--bold {
   position: relative;
-  margin-top: 28px;
+  margin-top: rem(14);
 }
 
 .footer-menu__left .footer-menu__item.footer-menu__item--bold:first-child,
@@ -100,9 +115,9 @@
   position: absolute;
   content: "";
   display: block;
-  width: 18px;
-  height: 18px;
-  left: -22px;
+  width: rem(18);
+  height: rem(18);
+  left: rem(-22);
   top: 50%;
   transform: translateY(-50%);
   background-size: contain;
@@ -114,9 +129,9 @@
 .footer-menu__item a {
   display: inline-block;
   color: $white;
-  font-size: 16px;
-  padding-top: 12px;
-  padding-bottom: 12px;
+  font-size: rem(16);
+  padding-top: rem(10);
+  padding-bottom: rem(10);
   // width: inherit;
   height: inherit;
   cursor: pointer;
@@ -129,12 +144,12 @@
 .footer__small {
   display: block;
   color: $white;
-  font-size: 12px;
+  font-size: rem(12);
   text-align: center;
-  margin-top: 40px;
+  margin-top: rem(26);
   @include mq("md") {
-    font-size: 14px;
-    margin-top: 80px;
+    font-size: rem(14);
+    margin-top: rem(80);
     text-align: center;
   }
 }

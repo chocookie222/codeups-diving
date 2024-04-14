@@ -9,7 +9,7 @@
   background: rgba($black0D, $alpha: 0.68);
   height: rem(80);
   @include mq("md") {
-    height: 90px;
+    height: rem(90);
   }
 }
 
@@ -23,7 +23,7 @@
     max-width: 1520px;
     width: 100%;
     margin: 0 auto;
-    padding: 0 20px 0 40px;
+    padding: 0 rem(20) 0 rem(40);
   }
 }
 
@@ -32,7 +32,16 @@
   position: relative;
   z-index: 9999;
   @include mq("md") {
-    width: 133px;
+    width: rem(133);
+  }
+}
+
+.header__logo-link img {
+  width: 100%;
+  object-fit: cover;
+  aspect-ratio: 102 / 38;
+  @include mq("md") {
+    aspect-ratio: 133 / 50;
   }
 }
 
@@ -81,9 +90,9 @@
 }
 /*is-OPEN時の動き*/
 .hamburger.is-open span:nth-child(1) {
-  top: 12px;
-  right: -4px;
-  width: 38px;
+  top: rem(12);
+  right: rem(-4);
+  width: rem(38);
   transform: rotate(37deg);
 }
 
@@ -93,8 +102,8 @@
 }
 
 .hamburger.is-open span:nth-child(3) {
-  top: -12px;
-  right: -4px;
-  width: 38px;
+  top: rem(-12);
+  right: rem(-4);
+  width: rem(38);
   transform: rotate(-37deg);
 }

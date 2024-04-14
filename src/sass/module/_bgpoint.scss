@@ -6,7 +6,16 @@
     z-index: 100;
     width: 194px;
     bottom: -91px;
-    right: -97px;
+    // right: -97px;
+    right: calc(50% - min(48.5vw, 637px));
+  }
+}
+
+.bgpoint.bgpoint--sango img {
+  @include mq("md") {
+    width: 100%;
+    object-fit: cover;
+    aspect-ratio: 194 / 181;
   }
 }
 
@@ -15,16 +24,32 @@
   z-index: 100;
   width: 437px;
   top: -76px;
-  left: -80px;
+  left: -55px;
+}
+
+.bgpoint.bgpoint--fish-blog img {
+  @include mq("md") {
+    width: 100%;
+    object-fit: cover;
+    aspect-ratio: 437 / 201;
+  }
 }
 
 .bgpoint.bgpoint--fish-voice {
   position: absolute;
   z-index: 100;
   transform: scale(-1, 1);
-  width: 301px;
-  top: -120px;
-  left: -80px;
+  width: 309px;
+  top: -117px;
+  left: -59px;
+}
+
+.bgpoint.bgpoint--fish-voice img {
+  @include mq("md") {
+    width: 100%;
+    object-fit: cover;
+    aspect-ratio: 301 / 138;
+  }
 }
 
 .bgpoint.bgpoint--tatsu {
@@ -37,18 +62,42 @@
   }
 }
 
+.bgpoint.bgpoint--tatsu img {
+  @include mq("md") {
+    width: 100%;
+    object-fit: cover;
+    aspect-ratio: 71 / 162;
+  }
+}
+
 .bgpoint.bgpoint--fish-price {
   position: absolute;
   z-index: 100;
-  width: 437px;
-  bottom: -40px;
-  left: -80px;
+  width: 447px;
+  bottom: -51px;
+  left: -60px;
+}
+
+.bgpoint.bgpoint--fish-price img {
+  @include mq("md") {
+    width: 100%;
+    object-fit: cover;
+    aspect-ratio: 437 / 201;
+  }
 }
 
 .bgpoint.bgpoint--fish-contact {
   position: absolute;
   z-index: 100;
-  width: 301px;
-  top: -40px;
-  right: -59px;
+  width: 307px;
+  top: -34px;
+  right: calc(50% - min(48.5vw, 674px));
+}
+
+.bgpoint.bgpoint--fish-contact img {
+  @include mq("md") {
+    width: 100%;
+    object-fit: cover;
+    aspect-ratio: 301 / 138;
+  }
 }

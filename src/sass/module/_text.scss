@@ -2,17 +2,18 @@
 
 .text {
   color: $black0D;
-  font-size: 16px;
+  font-size: rem(16);
   line-height: 1.5;
+  letter-spacing: 0.005em;
 }
 
 .text.text--large.text--large {
   color: $green40;
-  font-size: 40px;
+  font-size: rem(40);
   line-height: 1;
   @include mq("md") {
     color: $white;
-    font-size: 80px;
+    font-size: rem(80);
     line-height: 1.25;
   }
 }

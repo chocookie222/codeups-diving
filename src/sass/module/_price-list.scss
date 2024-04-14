@@ -3,39 +3,63 @@
 .price-list {
 }
 
+.price-list:not(:first-child) {
+  margin-top: rem(40);
+  @include mq("md") {
+    margin-top: rem(39);
+  }
+}
+
 .price-list__title {
   color: $black0D;
-  font-size: 16px;
+  font-size: rem(16);
   line-height: 1.5;
   font-weight: $bold;
-  padding-bottom: 4px;
+  padding-bottom: rem(1);
   border-bottom: 1px $green40 solid;
+  @include mq("md") {
+    padding-bottom: rem(3);
+  }
 }
 
 .price-list__items {
+  margin-top: rem(10);
+  @include mq("md") {
+    margin-top: rem(5);
+  }
 }
 
 .price-list__item {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  margin-top: 8px;
+  @include mq("md") {
+    margin-top: rem(5);
+  }
+}
+
+.price-list__item:not(:first-child) {
+  margin-top: rem(8);
+  @include mq("md") {
+    margin-top: rem(5);
+  }
 }
 
 .price-list__menu {
   color: $black0D;
-  font-size: 14px;
+  font-size: rem(14);
   line-height: 1.714285714285714;
+  letter-spacing: 0.02em;
   @include mq("md") {
-    font-size: 16px;
+    font-size: rem(16);
   }
 }
 
 .price-list__price {
   color: $black0D;
-  font-size: 14px;
+  font-size: rem(14);
   font-family: $third-font-family;
   @include mq("md") {
-    font-size: 16px;
+    font-size: rem(16);
   }
 }
