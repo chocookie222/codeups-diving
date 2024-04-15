@@ -4,10 +4,9 @@
   @include mq("md") {
     position: absolute;
     z-index: 100;
-    width: 194px;
-    bottom: -91px;
-    // right: -97px;
-    right: calc(50% - min(48.5vw, 637px));
+    width: rem(194);
+    bottom: rem(-91);
+    right: calc(50% - min(48.5vw, rem(637)));
   }
 }
 
@@ -22,9 +21,9 @@
 .bgpoint.bgpoint--fish-blog {
   position: absolute;
   z-index: 100;
-  width: 437px;
-  top: -76px;
-  left: -55px;
+  width: rem(437);
+  top: rem(-76);
+  left: rem(-55);
 }
 
 .bgpoint.bgpoint--fish-blog img {
@@ -39,9 +38,9 @@
   position: absolute;
   z-index: 100;
   transform: scale(-1, 1);
-  width: 309px;
-  top: -117px;
-  left: -59px;
+  width: rem(309);
+  top: rem(-117);
+  left: rem(-59);
 }
 
 .bgpoint.bgpoint--fish-voice img {
@@ -56,9 +55,9 @@
   @include mq("md") {
     position: absolute;
     z-index: 100;
-    width: 71px;
-    bottom: -95px;
-    right: 25px;
+    width: rem(71);
+    bottom: rem(-95);
+    right: rem(25);
   }
 }
 
@@ -73,9 +72,9 @@
 .bgpoint.bgpoint--fish-price {
   position: absolute;
   z-index: 100;
-  width: 447px;
-  bottom: -51px;
-  left: -60px;
+  width: rem(447);
+  bottom: rem(-51);
+  left: rem(-60);
 }
 
 .bgpoint.bgpoint--fish-price img {
@@ -89,9 +88,9 @@
 .bgpoint.bgpoint--fish-contact {
   position: absolute;
   z-index: 100;
-  width: 307px;
-  top: -34px;
-  right: calc(50% - min(48.5vw, 674px));
+  width: rem(307);
+  top: rem(-34);
+  right: calc(50% - min(48.5vw, rem(674)));
 }
 
 .bgpoint.bgpoint--fish-contact img {

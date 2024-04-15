@@ -17,7 +17,6 @@
   grid-template-columns: 1fr 1fr;
   align-items: end;
   gap: rem(13);
-  // padding: 15) 16) 0;
   @include mq("md") {
     grid-template-columns: 23fr 15fr;
     gap: rem(16);

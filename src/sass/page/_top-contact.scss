@@ -23,7 +23,6 @@
     max-width: 1080px;
     display: grid;
     grid-template-columns: 522fr 396fr;
-    // display: flex;
     justify-content: space-between;
     margin: 0 auto;
     padding: rem(82) rem(111) rem(80) rem(50);
@@ -31,8 +30,6 @@
 }
 
 .top-contact__store-info {
-  // display: flex;
-  // flex-direction: column;
   display: grid;
   justify-content: center;
   align-items: center;
@@ -74,10 +71,7 @@
   border-top: 1px solid $green40;
   @include mq("md") {
     display: grid;
-    // display: flex;
     grid-template-columns: 146fr 273fr;
-
-    // gap: 21px;
     max-width: 490px;
     width: 100%;
     padding-top: rem(24);
@@ -124,7 +118,6 @@
   @include mq("md") {
     max-width: 273px;
     width: 100%;
-    // max-height: 148px;
     margin-top: 0;
     margin-left: rem(20);
   }

@@ -27,7 +27,7 @@ jQuery(function ($) {
     speed: 400,
     autoplay: {
       delay: 3000, // 1秒後に次のスライド
-      // disableOnInteraction: false, // 矢印をクリックしても自動再生を止めない
+      disableOnInteraction: false, // 矢印をクリックしても自動再生を止めない
     },
   });
 

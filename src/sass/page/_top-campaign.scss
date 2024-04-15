@@ -28,7 +28,6 @@
 }
 
 .top-campaign__container {
-  // position: relative;
   margin-inline: auto;
   max-width: 600px;
   @include mq("md") {
@@ -38,11 +37,6 @@
   }
 }
 .top-campaign__swiper {
-  // padding-left: rem(15);
-  // @include mq("md") {
-  //   padding-left: 0;
-  //   // padding-left: rem(180);
-  // }
 }
 
 .top-campaign__cards {
@@ -64,12 +58,11 @@
   }
 }
 
-// 左prev
+// 左矢印（prev）
 .top-campaign__swiper-button-prev {
   display: none;
   @include mq("md") {
     display: block;
-    // position: absolute;
     top: 3%;
     left: 76.5%;
     width: rem(80);
@@ -81,8 +74,6 @@
   @include mq("md") {
     position: absolute;
     content: "";
-    // top: 0px;
-    // right: 0px;
     width: rem(80);
     height: rem(80);
     background-image: url(/assets/images/common/arrow-left.svg);
@@ -92,12 +83,11 @@
   }
 }
 
-// 右next
+// 右矢印（next）
 .top-campaign__swiper-button-next {
   display: none;
   @include mq("md") {
     display: block;
-    // position: absolute;
     top: 3%;
     left: 90.5%;
     width: rem(80);
@@ -109,8 +99,6 @@
   @include mq("md") {
     position: absolute;
     content: "";
-    // top: 0px;
-    // right: 0px;
     width: rem(80);
     height: rem(80);
     background-image: url(/assets/images/common/arrow-right.svg);

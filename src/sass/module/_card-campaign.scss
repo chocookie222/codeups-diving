@@ -73,7 +73,6 @@
   align-items: baseline;
   margin-top: rem(-2);
   @include mq("md") {
-    // display: grid;
     margin-top: rem(-5);
     justify-content: flex-start;
   }
