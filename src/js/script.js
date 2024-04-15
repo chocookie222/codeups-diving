@@ -39,7 +39,6 @@ jQuery(function ($) {
       delay: 1000,
       disableOnInteraction: false,
     },
-    // slidesPerView: 1.26,
     slidesPerView: 1.21,
     spaceBetween: 24,
     breakpoints: {
@@ -85,9 +84,7 @@ jQuery(function ($) {
   });
 
   $(function () {
-    // 変数にクラスを入れる
     var btn = $(".pagetop");
-    //スクロールしてページトップから100に達したらボタンを表示
     $(window).on("load scroll", function () {
       if ($(this).scrollTop() > 100) {
         btn.addClass("active");
