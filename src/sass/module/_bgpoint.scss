@@ -56,7 +56,7 @@
     position: absolute;
     z-index: 100;
     width: rem(71);
-    bottom: rem(-95);
+    bottom: rem(-70);
     right: rem(25);
   }
 }
@@ -88,9 +88,16 @@
 .bgpoint.bgpoint--fish-contact {
   position: absolute;
   z-index: 100;
-  width: rem(307);
-  top: rem(-34);
-  right: calc(50% - min(48.5vw, rem(674)));
+  width: rem(113);
+  top: rem(-25);
+  right: calc(50% - min(46.5vw, rem(674)));
+  @include mq("md") {
+    position: absolute;
+    z-index: 100;
+    width: rem(307);
+    top: rem(-34);
+    right: calc(50% - min(48.5vw, rem(674)));
+  }
 }
 
 .bgpoint.bgpoint--fish-contact img {

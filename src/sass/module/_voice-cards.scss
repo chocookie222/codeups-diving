@@ -1,7 +1,7 @@
 @use "global" as *;
 
-.cards-voice {
+.voice-cards {
   display: grid;
   grid-template-columns: 1fr;
-  gap: rem(38);
+  gap: rem(42);
 }

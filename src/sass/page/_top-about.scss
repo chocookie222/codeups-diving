@@ -3,7 +3,7 @@
 .top-about {
   padding: rem(80) 0 rem(74);
   @include mq("md") {
-    padding: rem(140) 0 rem(164);
+    padding: rem(144) 0 rem(164);
   }
 }
 
@@ -75,7 +75,7 @@
 .top-about__contents {
   @include mq("md") {
     position: absolute;
-    top: rem(306);
+    top: rem(307);
     right: rem(66);
     display: flex;
     max-width: 880px;
@@ -106,8 +106,8 @@
 }
 
 .top-about__button {
-  margin-top: rem(46);
+  margin-top: rem(47);
   @include mq("md") {
-    margin-top: rem(40);
+    margin-top: rem(36);
   }
 }

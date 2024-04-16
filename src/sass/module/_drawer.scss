@@ -55,7 +55,7 @@
   background-size: contain;
   background-position: center;
   background-repeat: no-repeat;
-  background-image: url("/assets/images/common/drawer-hitode.png");
+  background-image: url("./assets/images/common/drawer-hitode.png");
 }
 
 .drawer-menu__item.drawer-menu__item--bold.pp::before {
@@ -72,7 +72,6 @@
   padding-top: rem(12);
   padding-bottom: rem(12);
   line-height: 1.125;
-  // width: inherit;
   height: inherit;
   cursor: pointer;
 }

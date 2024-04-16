@@ -19,7 +19,7 @@
 }
 
 .top-voice__sub-heading.sub-heading {
-  margin-top: rem(1);
+  margin-top: rem(2);
   @include mq("md") {
     margin-top: rem(10);
   }
@@ -37,6 +37,6 @@
 .top-voice__button {
   margin-top: rem(40);
   @include mq("md") {
-    margin-top: rem(78);
+    margin-top: rem(77);
   }
 }

@@ -11,6 +11,7 @@
 }
 
 .button a {
+  display: flex;
   position: relative;
   z-index: 9999;
   display: inline-block;
@@ -20,8 +21,32 @@
   line-height: 1;
   border: $green40 1px solid;
   background: $green40;
-  padding: rem(19) rem(38);
+  padding: rem(19) rem(88) rem(19) rem(38);
   cursor: pointer;
+}
+
+.button span {
+  position: relative;
+}
+
+.button span::after {
+  position: absolute;
+  content: "";
+  z-index: 500;
+  top: 45%;
+  right: -48px;
+  transform: translateY(-50%);
+  display: inline-block;
+  width: rem(40);
+  height: 10px;
+  background-image: url("../images/common/button-arrow.svg");
+  background-size: contain;
+  background-repeat: no-repeat;
+  vertical-align: middle;
+}
+
+.button span:hover::after {
+  background-image: url("../images/common/button-arrow-green.svg");
 }
 
 .button a::first-letter {
@@ -50,12 +75,6 @@
 
 .button a.slide:hover::after {
   transform: scale(1, 1);
-}
-
-.button a:hover .button__arrow .arrow__line01,
-.button a:hover .button__arrow .arrow__line02 {
-  background: $green40;
-  transition: 0.3s;
 }
 
 .button a::before {

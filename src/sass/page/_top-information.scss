@@ -47,13 +47,13 @@
   color: $black0D;
   font-size: rem(20);
   font-weight: $bold;
-  margin-top: rem(28);
+  margin-top: rem(30);
   padding-bottom: rem(2);
   line-height: 1;
   border-bottom: 1px solid $green40;
   @include mq("md") {
     font-size: rem(24);
-    margin-top: rem(66);
+    margin-top: rem(65);
   }
 }
 
@@ -66,7 +66,4 @@
 
 .top-information__button {
   margin-top: rem(37);
-  @include mq("md") {
-    margin-top: rem(36);
-  }
 }

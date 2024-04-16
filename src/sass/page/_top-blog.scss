@@ -3,7 +3,7 @@
 .top-blog {
   padding-top: rem(75);
   @include mq("md") {
-    background-image: url(/assets/images/common/blog-bg.jpg);
+    background-image: url(../images/common/blog-bg.jpg);
     background-position: top center;
     background-repeat: no-repeat;
     background-size: contain;
@@ -41,7 +41,7 @@
 }
 
 .top-blog__sub-heading {
-  margin-top: rem(4);
+  margin-top: rem(2);
   @include mq("md") {
     color: $white;
     margin-top: rem(10);

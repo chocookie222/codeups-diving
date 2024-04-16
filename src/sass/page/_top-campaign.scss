@@ -2,9 +2,9 @@
 
 .top-campaign {
   padding-top: rem(36);
+  overflow: hidden;
   @include mq("md") {
     padding-top: rem(120);
-    height: rem(809);
   }
 }
 
@@ -52,7 +52,7 @@
 }
 
 .top-campaign__button {
-  margin-top: rem(32);
+  margin-top: rem(30);
   @include mq("md") {
     margin-top: rem(86);
   }
@@ -76,7 +76,7 @@
     content: "";
     width: rem(80);
     height: rem(80);
-    background-image: url(/assets/images/common/arrow-left.svg);
+    background-image: url(../images/common/arrow-left.svg);
     background-repeat: no-repeat;
     background-size: contain;
     margin: auto;
@@ -101,7 +101,7 @@
     content: "";
     width: rem(80);
     height: rem(80);
-    background-image: url(/assets/images/common/arrow-right.svg);
+    background-image: url(../images/common/arrow-right.svg);
     background-repeat: no-repeat;
     background-size: contain;
     margin: auto;
