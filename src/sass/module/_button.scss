@@ -34,18 +34,18 @@
   content: "";
   z-index: 500;
   top: 45%;
-  right: -48px;
+  right: rem(-48);
   transform: translateY(-50%);
   display: inline-block;
   width: rem(40);
-  height: 10px;
+  height: rem(10);
   background-image: url("../images/common/button-arrow.svg");
   background-size: contain;
   background-repeat: no-repeat;
   vertical-align: middle;
 }
 
-.button span:hover::after {
+.button a:hover span::after {
   background-image: url("../images/common/button-arrow-green.svg");
 }
 

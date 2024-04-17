@@ -10,6 +10,15 @@ jQuery(function ($) {
     }
   });
 
+  //画面幅が広がったらドロワーを非表示にする
+  $(window).resize(function () {
+    if (window.matchMedia("(min-width:768px)").matches) {
+      $(".js-header").removeClass("is-open");
+      $(".js-drawer-menu").removeClass("is-open");
+      $(".js-drawer-menu").fadeOut();
+    }
+  });
+
   //header 背景
   $(function () {
     $(window).on("scroll", function () {
