@@ -3,39 +3,23 @@
 .top-blog {
   padding-top: rem(75);
   @include mq("md") {
-    // background-image: url(../images/common/blog-bg.jpg);
-    // background-position: top center;
-    // background-repeat: no-repeat;
-    // background-size: contain;
-    width: 100%;
+    position: relative;
     padding-top: rem(100);
   }
 }
 
-.top-blog__bg:first-child {
-  @include mq("md") {
-    display: block;
-    background: url(../images/common/blog-bg.jpg);
-    background-position: top center;
-    background-repeat: no-repeat;
-    background-size: contain;
-    height: 51.493%;
-  }
+.top-blog__bgimg {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 60.168%;
 }
 
-.top-blog__bg:last-child {
-  @include mq("md") {
-    display: block;
-    width: 100%;
-    height: 48.507%;
-  }
-}
-
-.top-blog__bg {
-  display: block;
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center;
+.top-blog__bgimg img {
+  aspect-ratio: 1440 / 500;
+  width: 100%;
+  height: 100%;
 }
 
 .top-blog__inner {

@@ -46,9 +46,12 @@
 
 .pc-nav__item a {
   position: relative;
+  height: inherit;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
 }
 
-.pc-nav__item.current a,
 .pc-nav__item a:hover {
   color: $white;
 }
@@ -56,7 +59,7 @@
 .pc-nav__item a::after {
   content: "";
   position: absolute;
-  bottom: rem(-4);
+  bottom: rem(20);
   width: 100%;
   height: rem(1);
   background: $white;
@@ -65,7 +68,6 @@
   transform-origin: center top;
 }
 
-.pc-nav__item.current a::after,
 .pc-nav__item a:hover::after {
   transform: scale(1, 1);
 }

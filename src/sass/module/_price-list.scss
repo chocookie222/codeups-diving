@@ -59,6 +59,7 @@
   color: $black0D;
   font-size: rem(14);
   font-family: $third-font-family;
+  padding-left: rem(10);
   @include mq("md") {
     font-size: rem(16);
   }
