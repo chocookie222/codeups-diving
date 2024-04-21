@@ -140,6 +140,10 @@
   font-weight: $bold;
 }
 
+.footer-menu__item a:hover {
+  opacity: 0.7;
+}
+
 .footer__small {
   display: block;
   color: $white;

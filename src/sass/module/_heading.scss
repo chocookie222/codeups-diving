@@ -3,6 +3,7 @@
 .heading {
   color: $black0D;
   font-size: rem(32);
+  font-family: $base-font-family;
   font-weight: $normal;
   text-align: center;
   @include mq("md") {

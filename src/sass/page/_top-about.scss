@@ -76,16 +76,19 @@
   @include mq("md") {
     position: absolute;
     top: rem(307);
-    right: rem(66);
-    display: flex;
-    max-width: 880px;
-    margin-right: 0;
-    margin-left: auto;
+    right: rem(40);
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: rem(40);
+    max-width: 890px;
+    padding-left: rem(25);
+    padding-right: rem(25);
   }
 }
 .top-about__text--large {
   margin-top: rem(42);
   @include mq("md") {
+    max-width: 400px;
     margin-top: 0;
   }
 }
@@ -93,7 +96,6 @@
 .top-about__body {
   @include mq("md") {
     max-width: 400px;
-    margin-left: rem(40);
   }
 }
 
