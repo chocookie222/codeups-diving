@@ -16,6 +16,7 @@ jQuery(function ($) {
       $(".js-header").removeClass("is-open");
       $(".js-drawer-menu").removeClass("is-open");
       $(".js-drawer-menu").fadeOut();
+      $(".js-hamburger").removeClass("is-open");
     }
   });
 

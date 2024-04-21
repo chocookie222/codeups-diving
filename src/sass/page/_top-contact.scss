@@ -11,21 +11,16 @@
   position: relative;
   max-width: 600px;
   width: 100%;
-  @include mq("md") {
-    box-shadow: rem(4) rem(4) rem(10) rem(1) rgba($black00, 0.25);
-  }
 }
 
-.top-contact .top-contact__inner {
-  padding-left: rem(25);
-  padding-right: rem(25);
+.top-contact__box {
   @include mq("md") {
-    max-width: 1080px;
-    display: grid;
-    grid-template-columns: 522fr 396fr;
-    justify-content: space-between;
-    margin: 0 auto;
-    padding: rem(82) rem(111) rem(80) rem(50);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: rem(80);
+    padding-bottom: rem(85);
+    box-shadow: rem(4) rem(4) rem(10) rem(1) rgba($black00, 0.25);
   }
 }
 
@@ -33,10 +28,11 @@
   display: grid;
   align-items: center;
   width: 100%;
-  padding: 0 rem(15);
+  padding: 0 rem(25);
   @include mq("md") {
-    padding: 0;
-    padding-right: rem(82);
+    width: 52.963%;
+    padding-left: rem(50);
+    padding-right: rem(75);
     border-right: 1px solid $green40;
   }
 }
@@ -142,9 +138,9 @@
 
 .top-contact__contact-info {
   @include mq("md") {
-    max-width: 396px;
-    width: 100%;
-    padding: rem(20) 0 rem(19) rem(81);
+    width: 47.037%;
+    padding-left: rem(20);
+    padding-right: rem(50);
   }
 }
 

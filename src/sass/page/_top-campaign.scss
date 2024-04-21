@@ -33,16 +33,23 @@
   @include mq("md") {
     max-width: 1440px;
     right: 0;
-    margin-right: calc(50% - 50vw);
+    margin-left: 0;
   }
 }
 .top-campaign__swiper {
+  @include mq("md") {
+    margin-right: calc(50% - 50vw);
+  }
 }
 
 .top-campaign__cards {
   display: flex;
   margin-top: rem(24);
+  padding-bottom: rem(5);
   @include mq("md") {
+    display: grid;
+    grid-template-columns: repeat(8, 1fr);
+    grid-template-rows: auto;
     margin-top: rem(38);
   }
 }
@@ -54,7 +61,7 @@
 .top-campaign__button {
   margin-top: rem(30);
   @include mq("md") {
-    margin-top: rem(86);
+    margin-top: rem(75);
   }
 }
 

@@ -3,6 +3,8 @@
 .card-campaign {
   background: $white;
   width: 100%;
+  padding-bottom: rem(20);
+  box-shadow: rem(5) rem(5) rem(6) rgba($black00, 0.25);
 }
 
 .card-campaign__img {
@@ -18,9 +20,9 @@
 }
 
 .card-campaign__body {
-  padding: rem(16) rem(16) rem(24);
+  padding: rem(16) rem(16) rem(10);
   @include mq("md") {
-    padding: rem(25) rem(16) rem(24);
+    padding: rem(25) rem(16) rem(10);
   }
 }
 
