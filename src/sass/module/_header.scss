@@ -13,6 +13,11 @@
   }
 }
 
+.header.is-open {
+  background-color: $green40;
+  z-index: 9999;
+}
+
 .header__inner {
   display: flex;
   justify-content: space-between;
@@ -20,7 +25,6 @@
   height: inherit;
   padding: 0 rem(15);
   @include mq("md") {
-    max-width: 1520px;
     width: 100%;
     margin: 0 auto;
     padding: 0 rem(20) 0 rem(40);

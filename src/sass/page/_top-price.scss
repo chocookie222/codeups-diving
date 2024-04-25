@@ -2,10 +2,12 @@
 
 .top-price {
   background: $greendd;
+  margin-top: rem(86);
   padding-top: rem(76);
-  padding-bottom: rem(80);
+  padding-bottom: rem(83);
   @include mq("md") {
-    padding-top: rem(102);
+    margin-top: rem(150);
+    padding-top: rem(96);
     padding-bottom: rem(102);
   }
 }
@@ -22,7 +24,6 @@
 }
 
 .top-price__sub-heading {
-  margin-top: rem(2);
   @include mq("md") {
     margin-top: rem(10);
   }

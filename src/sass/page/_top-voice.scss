@@ -1,9 +1,9 @@
 @use "global" as *;
 
 .top-voice {
-  padding: rem(80) 0 rem(85);
+  margin-top: rem(80);
   @include mq("md") {
-    padding: rem(144) 0 rem(140);
+    margin-top: rem(144);
   }
 }
 
@@ -28,8 +28,6 @@
 .top-voice__cards {
   margin-top: rem(42);
   @include mq("md") {
-    grid-template-columns: 1fr 1fr;
-    gap: rem(40);
     margin-top: rem(32);
   }
 }

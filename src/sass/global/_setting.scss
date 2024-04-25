@@ -9,6 +9,10 @@ $inner: 1080px;
 $padding-pc: 25px;
 $padding-sp: 15px;
 
+body.no_scroll {
+  overflow: hidden;
+}
+
 ////////////////////
 // フォント設定
 ////////////////////

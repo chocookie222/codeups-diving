@@ -1,10 +1,14 @@
 @use "global" as *;
 
 .top-information {
-  padding: rem(75) 0 rem(85);
+  margin-top: rem(75);
+  padding-top: rem(75);
+  padding-bottom: rem(85);
   background-color: $greendd;
   @include mq("md") {
-    padding: rem(100) 0 rem(76);
+    margin-top: rem(166);
+    padding-top: rem(100);
+    padding-bottom: rem(76);
   }
 }
 
@@ -17,14 +21,13 @@
 }
 
 .top-information__sub-heading {
-  margin-top: rem(4);
   @include mq("md") {
-    margin-top: rem(10);
+    margin-top: rem(8);
   }
 }
 
 .top-information__body {
-  margin-top: rem(26);
+  margin-top: rem(28);
   @include mq("md") {
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -53,7 +56,7 @@
   border-bottom: 1px solid $green40;
   @include mq("md") {
     font-size: rem(24);
-    margin-top: rem(65);
+    margin-top: rem(66);
   }
 }
 
@@ -66,4 +69,7 @@
 
 .top-information__button {
   margin-top: rem(37);
+  @include mq("md") {
+    margin-top: rem(38);
+  }
 }

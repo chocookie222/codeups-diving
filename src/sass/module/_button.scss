@@ -1,9 +1,7 @@
 @use "global" as *;
 
 .button {
-  display: flex;
-  justify-content: center;
-  transition: 0.2s cubic-bezier(0.45, 0, 0.55, 1);
+  text-align: center;
 }
 
 .button a.slide {
@@ -11,7 +9,6 @@
 }
 
 .button a {
-  display: flex;
   position: relative;
   z-index: 9999;
   display: inline-block;
