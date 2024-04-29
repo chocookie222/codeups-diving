@@ -52,7 +52,7 @@
   background: $white;
   border: 1px solid $green40;
   @include mq("md") {
-    padding: rem(7) rem(15);
+    padding: rem(9) rem(15) rem(5);
   }
 }
 

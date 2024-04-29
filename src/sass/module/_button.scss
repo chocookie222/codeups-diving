@@ -1,16 +1,8 @@
 @use "global" as *;
 
 .button {
-  text-align: center;
-}
-
-.button a.slide {
-  z-index: 1;
-}
-
-.button a {
   position: relative;
-  z-index: 9999;
+  z-index: 8888;
   display: inline-block;
   color: $white;
   font-size: rem(14);
@@ -20,6 +12,12 @@
   background: $green40;
   padding: rem(19) rem(88) rem(19) rem(38);
   cursor: pointer;
+}
+
+.button:hover {
+  color: $green40;
+  transition: 0.3s;
+  z-index: 9999;
 }
 
 .button span {
@@ -42,15 +40,15 @@
   vertical-align: middle;
 }
 
-.button a:hover span::after {
+.button:hover span::after {
   background-image: url("../images/common/button-arrow-green.svg");
 }
 
-.button a::first-letter {
+.button::first-letter {
   text-transform: capitalize;
 }
 
-.button a.slide::after {
+.button.slide::after {
   background: $white;
   position: absolute;
   top: 0;
@@ -64,17 +62,11 @@
   z-index: -1;
 }
 
-.button a:hover {
-  color: $green40;
-  transition: 0.3s;
-  z-index: 9999;
-}
-
-.button a.slide:hover::after {
+.button.slide:hover::after {
   transform: scale(1, 1);
 }
 
-.button a::before {
+.button::before {
   content: "";
   display: block;
   position: absolute;

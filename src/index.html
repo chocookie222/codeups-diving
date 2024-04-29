@@ -23,6 +23,11 @@
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
     />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"
+    />
     <link rel="stylesheet" href="./assets/css/style.css?20240417004" />
     <!-- Google font -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -33,6 +38,7 @@
     />
     <!-- JavaScript -->
     <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <script defer src="./assets/js/jquery.inview.min.js"></script>
     <script defer src="./assets/js/script.js"></script>
@@ -177,60 +183,58 @@
     <main>
       <!-- mv -->
       <section class="top-mv mv">
-        <div class="swiper mvSwiper">
-          <div class="swiper-wrapper">
-            <div class="swiper-slide">
-              <picture class="top-mv__img">
-                <source
-                  srcset="./assets/images/common/mv.jpg"
-                  media="(max-width: 767px)"
-                  type="image/jpg"
-                />
-                <img
-                  src="./assets/images/common/mv-pc.jpg"
-                  alt="海の底を泳いでいる亀"
-                />
-              </picture>
-            </div>
-            <div class="swiper-slide">
-              <picture class="top-mv__img">
-                <source
-                  srcset="./assets/images/common/mv02.jpg"
-                  media="(max-width: 767px)"
-                  type="image/jpg"
-                />
-                <img
-                  src="./assets/images/common/mv-pc02.jpg"
-                  alt="海を泳いでいる亀"
-                />
-              </picture>
-            </div>
-            <div class="swiper-slide">
-              <picture class="top-mv__img">
-                <source
-                  srcset="./assets/images/common/mv03.jpg"
-                  media="(max-width: 767px)"
-                  type="image/jpg"
-                />
-                <img
-                  src="./assets/images/common/mv-pc03.jpg"
-                  alt="青空と海に浮いている船"
-                />
-              </picture>
-            </div>
-            <div class="swiper-slide">
-              <picture class="top-mv__img">
-                <source
-                  srcset="./assets/images/common/mv04.jpg"
-                  media="(max-width: 767px)"
-                  type="image/jpg"
-                />
-                <img
-                  src="./assets/images/common/mv-pc04.jpg"
-                  alt="澄んだ海と青空"
-                />
-              </picture>
-            </div>
+        <div class="top-mv__slider slider">
+          <div class="top-mv__slider-item slider-item">
+            <picture class="top-mv__img">
+              <source
+                srcset="./assets/images/common/mv.jpg"
+                media="(max-width: 767px)"
+                type="image/jpg"
+              />
+              <img
+                src="./assets/images/common/mv-pc.jpg"
+                alt="海の底を泳いでいる亀"
+              />
+            </picture>
+          </div>
+          <div class="top-mv__slider-item slider-item">
+            <picture class="top-mv__img">
+              <source
+                srcset="./assets/images/common/mv02.jpg"
+                media="(max-width: 767px)"
+                type="image/jpg"
+              />
+              <img
+                src="./assets/images/common/mv-pc02.jpg"
+                alt="海を泳いでいる亀"
+              />
+            </picture>
+          </div>
+          <div class="top-mv__slider-item slider-item">
+            <picture class="top-mv__img">
+              <source
+                srcset="./assets/images/common/mv03.jpg"
+                media="(max-width: 767px)"
+                type="image/jpg"
+              />
+              <img
+                src="./assets/images/common/mv-pc03.jpg"
+                alt="青空と海に浮いている船"
+              />
+            </picture>
+          </div>
+          <div class="top-mv__slider-item slider-item">
+            <picture class="top-mv__img">
+              <source
+                srcset="./assets/images/common/mv04.jpg"
+                media="(max-width: 767px)"
+                type="image/jpg"
+              />
+              <img
+                src="./assets/images/common/mv-pc04.jpg"
+                alt="澄んだ海と青空"
+              />
+            </picture>
           </div>
         </div>
         <div class="top-mv__body">
@@ -465,8 +469,8 @@
               </div>
             </div>
           </div>
-          <div class="top-campaign__button button">
-            <a href="#" class="slide">
+          <div class="top-campaign__button">
+            <a href="#" class="button slide">
               <span>view&nbsp;more</span>
             </a>
           </div>
@@ -511,15 +515,12 @@
                 ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。<br />
                 ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキスト
               </div>
-              <div class="top-about__button button">
-                <a href="#" class="slide">
+              <div class="top-about__button">
+                <a href="#" class="button slide">
                   <span>view&nbsp;more</span>
                 </a>
               </div>
             </div>
-          </div>
-          <div class="bgpoint bgpoint--sango md-show">
-            <img src="./assets/images/common/sango.svg" alt="さんごの画像" />
           </div>
         </div>
       </section>
@@ -543,8 +544,10 @@
                 当店はダイビングライセンス（Cカード）世界最大の教育機関PADIの「正規店」として店舗登録されています。<br />
                 正規登録店として、安心安全に初めての方でも安心安全にライセンス取得をサポート致します。
               </div>
-              <div class="top-information__button button">
-                <a href="#" class="slide"> <span>view&nbsp;more</span> </a>
+              <div class="top-information__button">
+                <a href="#" class="button slide">
+                  <span>view&nbsp;more</span>
+                </a>
               </div>
             </div>
           </div>
@@ -556,12 +559,6 @@
           <img src="./assets/images/common/blog-bg.jpg" alt="海の中の画像" />
         </div>
         <div class="top-blog__inner inner">
-          <div class="bgpoint bgpoint--fish-blog md-show">
-            <img
-              src="./assets/images/common/fish-white.svg"
-              alt="魚のイラスト"
-            />
-          </div>
           <p class="top-blog__heading heading">blog</p>
           <h2 class="top-blog__sub-heading sub-heading">ブログ</h2>
           <div class="top-blog__cards blog-cards">
@@ -624,8 +621,8 @@
               </div>
             </a>
           </div>
-          <div class="top-blog__button button">
-            <a href="#" class="slide">
+          <div class="top-blog__button">
+            <a href="#" class="button slide">
               <span>view&nbsp;more</span>
             </a>
           </div>
@@ -634,9 +631,6 @@
       <!-- voice -->
       <section id="voice" class="top-voice">
         <div class="top-voice__inner inner">
-          <div class="bgpoint bgpoint--fish-voice md-show">
-            <img src="./assets/images/common/fish.svg" alt="魚のイラスト" />
-          </div>
           <p class="top-voice__heading heading">voice</p>
           <h2 class="top-voice__sub-heading sub-heading">お客様の声</h2>
           <div class="top-voice__cards voice-cards">
@@ -693,16 +687,10 @@
               </div>
             </div>
           </div>
-          <div class="top-voice__button button">
-            <a href="#" class="slide">
+          <div class="top-voice__button">
+            <a href="#" class="button slide">
               <span>view&nbsp;more</span>
             </a>
-          </div>
-          <div class="bgpoint bgpoint--tatsu md-show">
-            <img
-              src="./assets/images/common/tatsu.svg"
-              alt="タツノオトシゴのイラスト"
-            />
           </div>
         </div>
       </section>
@@ -806,13 +794,10 @@
               </div>
             </div>
           </div>
-          <div class="top-price__button button">
-            <a href="#" class="slide">
+          <div class="top-price__button">
+            <a href="#" class="button slide">
               <span>view&nbsp;more</span>
             </a>
-          </div>
-          <div class="bgpoint bgpoint--fish-price md-show">
-            <img src="./assets/images/common/fish.svg" alt="魚のイラスト" />
           </div>
         </div>
       </section>
@@ -858,16 +843,13 @@
                   ></iframe>
                 </div>
               </div>
-              <div class="bgpoint bgpoint--fish-contact">
-                <img src="./assets/images/common/fish.svg" alt="魚のイラスト" />
-              </div>
             </div>
             <div class="top-contact__contact-info">
               <p class="top-contact__heading heading heading--large">contact</p>
               <h2 class="top-contact__sub-heading sub-heading">お問い合わせ</h2>
               <p class="top-contact__text">ご予約・お問い合わせはコチラ</p>
-              <div class="top-contact__button button">
-                <a href="#" class="slide">
+              <div class="top-contact__button">
+                <a href="#" class="button slide">
                   <span>contact&nbsp;us</span>
                 </a>
               </div>

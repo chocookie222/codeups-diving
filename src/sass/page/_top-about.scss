@@ -4,6 +4,7 @@
   margin-top: rem(77);
   @include mq("md") {
     margin-top: rem(144);
+    position: relative;
   }
 }
 
@@ -110,7 +111,23 @@
 
 .top-about__button {
   margin-top: rem(46);
+  text-align: center;
   @include mq("md") {
     margin-top: rem(36);
+  }
+}
+
+.top-about::after {
+  @include mq("md") {
+    content: "";
+    position: absolute;
+    z-index: 100;
+    background: url("../images/common/sango.svg");
+    background-size: contain;
+    background-repeat: no-repeat;
+    right: calc(50% - min(48.5vw, rem(638)));
+    bottom: rem(-91);
+    width: rem(194);
+    height: rem(181);
   }
 }

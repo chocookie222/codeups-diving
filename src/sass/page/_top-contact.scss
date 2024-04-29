@@ -1,12 +1,31 @@
 @use "global" as *;
 
 .top-contact {
+  position: relative;
   margin-top: rem(83);
-  padding-bottom: rem(104);
   @include mq("md") {
     margin-top: rem(140);
-    margin-bottom: rem(146);
-    padding-bottom: rem(10);
+    padding-top: rem(10);
+  }
+}
+
+.top-contact::before {
+  content: "";
+  position: absolute;
+  z-index: 100;
+  background: url("../images/common/fish.svg");
+  background-size: contain;
+  background-repeat: no-repeat;
+  top: rem(-25);
+  right: calc(50% - min(46.5vw, rem(674)));
+  width: rem(113);
+  height: rem(138);
+  @include mq("md") {
+    background-size: cover;
+    width: rem(307);
+    height: rem(138);
+    top: rem(-38);
+    right: calc(50% - min(48.5vw, rem(674)));
   }
 }
 
@@ -22,7 +41,7 @@
     justify-content: center;
     align-items: center;
     padding-top: rem(80);
-    padding-bottom: rem(85);
+    padding-bottom: rem(72);
     box-shadow: rem(4) rem(4) rem(10) rem(1) rgba($black00, 0.25);
   }
 }
@@ -179,6 +198,7 @@
 
 .top-contact__button {
   margin-top: rem(37);
+  text-align: center;
   @include mq("md") {
     margin-top: rem(35);
   }

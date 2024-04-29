@@ -9,6 +9,21 @@
   }
 }
 
+.top-blog::before {
+  @include mq("md") {
+    content: "";
+    position: absolute;
+    z-index: 100;
+    background: url("../images/common/fish-white.svg");
+    background-size: contain;
+    background-repeat: no-repeat;
+    top: rem(25);
+    left: calc(50% - min(48.5vw, rem(620)));
+    width: rem(437);
+    height: rem(201);
+  }
+}
+
 .top-blog__bgimg {
   position: absolute;
   top: 0;
@@ -59,6 +74,7 @@
 
 .top-blog__button {
   margin-top: rem(38);
+  text-align: center;
   @include mq("md") {
     margin-top: rem(82);
   }

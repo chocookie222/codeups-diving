@@ -4,6 +4,37 @@
   margin-top: rem(80);
   @include mq("md") {
     margin-top: rem(144);
+    position: relative;
+  }
+}
+
+.top-voice::before {
+  @include mq("md") {
+    content: "";
+    position: absolute;
+    z-index: 100;
+    background: url("../images/common/fish.svg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    transform: scaleX(-1);
+    top: rem(-117);
+    left: calc(50% - min(48.5vw, rem(623)));
+    width: rem(309);
+    height: rem(138);
+  }
+}
+.top-voice::after {
+  @include mq("md") {
+    content: "";
+    position: absolute;
+    z-index: 100;
+    background: url("../images/common/tatsu.svg");
+    background-size: contain;
+    background-repeat: no-repeat;
+    right: calc(50% - min(48.5vw, rem(540)));
+    bottom: rem(-72);
+    width: rem(71);
+    height: rem(162);
   }
 }
 
@@ -34,6 +65,7 @@
 
 .top-voice__button {
   margin-top: rem(40);
+  text-align: center;
   @include mq("md") {
     margin-top: rem(77);
   }
