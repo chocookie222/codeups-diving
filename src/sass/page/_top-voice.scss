@@ -1,7 +1,7 @@
 @use "global" as *;
 
 .top-voice {
-  margin-top: rem(80);
+  margin-top: rem(88);
   @include mq("md") {
     margin-top: rem(144);
     position: relative;
@@ -49,13 +49,6 @@
 .top-voice__heading {
 }
 
-.top-voice__sub-heading.sub-heading {
-  margin-top: rem(2);
-  @include mq("md") {
-    margin-top: rem(10);
-  }
-}
-
 .top-voice__cards {
   margin-top: rem(42);
   @include mq("md") {
@@ -67,6 +60,6 @@
   margin-top: rem(40);
   text-align: center;
   @include mq("md") {
-    margin-top: rem(77);
+    margin-top: rem(81);
   }
 }

@@ -25,7 +25,7 @@
 }
 
 .card-campaign__body {
-  padding: rem(16) rem(16) 0;
+  padding: rem(15) rem(16) 0;
   @include mq("md") {
     padding: rem(25) rem(16) rem(10);
     display: flex;
@@ -38,7 +38,7 @@
   display: inline-block;
   color: $green40;
   font-size: rem(12);
-  padding: rem(8) rem(12) rem(3);
+  padding: rem(8) rem(12) rem(2);
   background: $white;
   border: 1px solid $green40;
   width: fit-content;

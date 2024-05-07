@@ -6,9 +6,9 @@
 }
 
 .card-voice__inner {
-  padding: rem(16) rem(16) rem(20);
+  padding: rem(21) rem(16) rem(20);
   @include mq("md") {
-    padding: rem(24);
+    padding: rem(26) rem(24) rem(24);
   }
 }
 
@@ -63,10 +63,10 @@
   margin-top: rem(4);
   padding-bottom: 0;
   border-bottom: solid 1px $green40;
+  line-height: 1.5;
   @include mq("md") {
     font-size: rem(24);
-    margin-top: rem(10);
-    padding-bottom: rem(2);
+    margin-top: rem(8);
   }
 }
 
@@ -79,7 +79,7 @@
   }
 }
 
-.card-voice__text {
+.card-voice__body {
   color: $black0D;
   font-size: rem(16);
   line-height: 1.5;

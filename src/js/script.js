@@ -27,7 +27,7 @@ jQuery(function ($) {
   //header 背景
   $(function () {
     $(window).on("scroll", function () {
-      if ($(".mv").height() < $(this).scrollTop()) {
+      if ($(".js-mv").height() < $(this).scrollTop()) {
         $(".js-header").addClass("change-color");
       } else {
         $(".js-header").removeClass("change-color");
@@ -36,23 +36,18 @@ jQuery(function ($) {
   });
 
   // フェード(mv)
-  $(".slider").slick({
-    fade: true, //切り替えをフェードで行う。初期値はfalse。
-    autoplay: true, //自動的に動き出すか。初期値はfalse。
-    autoplaySpeed: 3000, //次のスライドに切り替わる待ち時間
-    speed: 2000, //スライドの動きのスピード。初期値は300。
-    infinite: true, //スライドをループさせるかどうか。初期値はtrue。
-    slidesToShow: 1, //スライドを画面に3枚見せる
-    slidesToScroll: 1, //1回のスクロールで3枚の写真を移動して見せる
-    arrows: false, //左右の矢印あり
-    dots: false, //下部ドットナビゲーションの表示
-    pauseOnFocus: false, //フォーカスで一時停止を無効
-    pauseOnHover: false, //マウスホバーで一時停止を無効
-    pauseOnDotsHover: false, //ドットナビゲーションをマウスホバーで一時停止を無効
+  var swiper = new Swiper(".js-mv-fade", {
+    loop: true,
+    speed: 2000,
+    autoplay: {
+      delay: 3000,
+      disableOnInteraction: false, // 矢印をクリックしても自動再生を止めない
+    },
+    effect: "fade",
   });
 
   // スライダー(キャンペーン)
-  var swiper = new Swiper(".campaign-Swiper", {
+  var swiper = new Swiper(".js-campaign-Swiper", {
     loop: true,
     speed: 2000,
     autoplay: {
@@ -79,7 +74,7 @@ jQuery(function ($) {
   });
 
   // 画像出現アニメーション
-  var box = $(".colorbox"),
+  var box = $(".js-colorbox"),
     speed = 700;
 
   box.each(function () {

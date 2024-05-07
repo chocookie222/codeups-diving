@@ -12,6 +12,9 @@
   }
 }
 
+.footer__pagetop {
+}
+
 .footer__inner {
   @include mq("md") {
     max-width: 1080px;
@@ -73,81 +76,13 @@
   }
 }
 
-.footer-menu {
-}
-
-.footer-menu__img {
-}
-
-.footer-menu__items {
+.footer__body {
   display: grid;
   grid-template-columns: 1fr 1fr;
   margin-top: rem(30);
   @include mq("md") {
-    margin-top: rem(14);
+    margin-top: rem(16);
   }
-}
-
-.footer-menu__left {
-  padding-left: rem(22);
-  @include mq("md") {
-    display: grid;
-    grid-template-columns: 33fr 27fr;
-  }
-}
-
-.footer-menu__right {
-  padding-left: rem(34);
-  @include mq("md") {
-    display: grid;
-    grid-template-columns: 33fr 28fr;
-  }
-}
-
-.footer-menu__item {
-}
-
-.footer-menu__item.footer-menu__item--bold {
-  position: relative;
-  margin-top: rem(14);
-}
-
-.footer-menu__left .footer-menu__item.footer-menu__item--bold:first-child,
-.footer-menu__right .footer-menu__item.footer-menu__item--bold:first-child {
-  margin-top: 0;
-}
-
-.footer-menu__item.footer-menu__item--bold::before {
-  position: absolute;
-  content: "";
-  display: block;
-  width: rem(18);
-  height: rem(18);
-  left: rem(-22);
-  top: 50%;
-  transform: translateY(-50%);
-  background-size: contain;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-image: url("../images/common/drawer-hitode.png");
-}
-
-.footer-menu__item a {
-  display: inline-block;
-  color: $white;
-  font-size: rem(16);
-  padding-top: rem(10);
-  padding-bottom: rem(10);
-  height: inherit;
-  cursor: pointer;
-}
-
-.footer-menu__item.footer-menu__item--bold a {
-  font-weight: $bold;
-}
-
-.footer-menu__item a:hover {
-  opacity: 0.7;
 }
 
 .footer__small {
@@ -158,7 +93,7 @@
   margin-top: rem(26);
   @include mq("md") {
     font-size: rem(14);
-    margin-top: rem(56);
+    margin-top: rem(62);
     text-align: center;
   }
 }

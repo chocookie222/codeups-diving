@@ -3,12 +3,12 @@
 .top-price {
   background: $greendd;
   margin-top: rem(86);
-  padding-top: rem(76);
+  padding-top: rem(84);
   padding-bottom: rem(83);
   @include mq("md") {
     position: relative;
     margin-top: rem(150);
-    padding-top: rem(96);
+    padding-top: rem(94);
     padding-bottom: rem(102);
   }
 }
@@ -39,19 +39,13 @@
 .top-price__heading {
 }
 
-.top-price__sub-heading {
-  @include mq("md") {
-    margin-top: rem(10);
-  }
-}
-
 .top-price__contents {
   @include mq("md") {
     display: grid;
     grid-template-columns: 1fr 1fr;
     align-items: start;
     gap: rem(93);
-    margin-top: rem(40);
+    margin-top: rem(45);
   }
 }
 
@@ -69,7 +63,7 @@
 
 .top-price__img {
   display: block;
-  margin-top: rem(26);
+  margin-top: rem(31);
   @include mq("md") {
     margin-top: 0;
   }
@@ -95,7 +89,7 @@
 }
 
 .top-price__button {
-  margin-top: rem(36);
+  margin-top: rem(37);
   text-align: center;
   @include mq("md") {
     margin-top: rem(76);

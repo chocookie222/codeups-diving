@@ -15,12 +15,12 @@
   padding: rem(15) rem(15) rem(10);
 }
 
-.drawer-menu__img {
-}
-
-.drawer-menu__items {
+.drawer-menu__inner {
   display: grid;
   grid-template-columns: 1fr 1fr;
+}
+
+.drawer-menu__img {
 }
 
 .drawer-menu__left {

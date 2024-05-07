@@ -1,7 +1,7 @@
 @use "global" as *;
 
 .top-blog {
-  margin-top: rem(75);
+  margin-top: rem(85);
   @include mq("md") {
     position: relative;
     margin-top: 0;
@@ -47,29 +47,15 @@
 }
 
 .top-blog__heading {
-  @include mq("md") {
-    color: $white;
-  }
-}
-
-.top-blog__inner .top-blog__heading::first-letter {
-  @include mq("md") {
-    color: $white;
-  }
-}
-
-.top-blog__sub-heading {
-  margin-top: rem(2);
-  @include mq("md") {
-    color: $white;
-    margin-top: rem(10);
-  }
 }
 
 .top-blog__cards {
-  margin-top: rem(24);
+  margin-top: rem(31);
   padding-right: rem(6);
   padding-left: rem(6);
+  @include mq("md") {
+    margin-top: rem(82);
+  }
 }
 
 .top-blog__button {

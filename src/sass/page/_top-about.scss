@@ -1,9 +1,9 @@
 @use "global" as *;
 
 .top-about {
-  margin-top: rem(77);
+  margin-top: rem(85);
   @include mq("md") {
-    margin-top: rem(144);
+    margin-top: rem(142);
     position: relative;
   }
 }
@@ -19,17 +19,11 @@
 .top-about__heading {
 }
 
-.top-about__sub-heading {
-  @include mq("md") {
-    margin-top: rem(5);
-  }
-}
-
 .top-about__img {
   position: relative;
-  margin-top: rem(53);
+  margin-top: rem(57);
   @include mq("md") {
-    margin-top: rem(118);
+    margin-top: rem(123);
   }
 }
 
@@ -87,10 +81,17 @@
     padding-left: rem(40);
   }
 }
-.top-about__text--large {
+.top-about__large-text {
+  color: $green40;
+  font-size: rem(40);
+  letter-spacing: 0.005em;
+  line-height: 1;
   margin-top: rem(42);
   @include mq("md") {
     max-width: 400px;
+    color: $white;
+    font-size: rem(80);
+    line-height: 1.25;
     margin-top: 0;
   }
 }
@@ -102,6 +103,10 @@
 }
 
 .top-about__text {
+  color: $black0D;
+  font-size: rem(16);
+  line-height: 1.5;
+  letter-spacing: 0.005em;
   margin-top: rem(18);
   @include mq("md") {
     color: $white;
