@@ -27,7 +27,9 @@ jQuery(function ($) {
   //header 背景
   $(function () {
     $(window).on("scroll", function () {
-      if ($(".js-mv").height() < $(this).scrollTop()) {
+      if ($(".top-mv").height() < $(this).scrollTop()) {
+        $(".js-header").addClass("change-color");
+      } else if ($(".breadcrumb").height() < $(this).scrollTop()) {
         $(".js-header").addClass("change-color");
       } else {
         $(".js-header").removeClass("change-color");
@@ -125,6 +127,83 @@ jQuery(function ($) {
       $("body,html").animate({
         scrollTop: 0,
       });
+    });
+  });
+
+  //タブ（campaign）
+  $(function () {
+    const tabButton = $(".js-tab-button--campaign"),
+      tabContent = $(".js-tab-content--campaign");
+    tabButton.on("click", function () {
+      let index = tabButton.index(this);
+
+      tabButton.removeClass("is-active");
+      $(this).addClass("is-active");
+      tabContent.removeClass("is-active");
+      tabContent.eq(index).addClass("is-active");
+    });
+  });
+
+  //タブ（information）
+  $(function () {
+    const tabButton = $(".js-tab-button--info"),
+      tabContent = $(".js-tab-content--info");
+    tabButton.on("click", function () {
+      let index = tabButton.index(this);
+
+      tabButton.removeClass("is-active");
+      $(this).addClass("is-active");
+      tabContent.removeClass("is-active");
+      tabContent.eq(index).addClass("is-active");
+    });
+  });
+
+  // モーダル（ギャラリー）
+  $(function () {
+    $(".js-modal-open").each(function () {
+      $(this).on("click", function () {
+        var target = $(this).data("target");
+        var modal__contents = document.getElementById(target);
+        $(modal__contents).fadeIn();
+        $("body").addClass("no_scroll");
+
+        return false;
+      });
+    });
+    $(".js-modal-close").on("click", function () {
+      $(".js-modal").fadeOut();
+      $("body").removeClass("no_scroll");
+
+      return false;
+    });
+  });
+
+  //タブ（voice）
+  $(function () {
+    const tabButton = $(".js-tab-button--voice"),
+      tabContent = $(".js-tab-content--voice");
+    tabButton.on("click", function () {
+      let index = tabButton.index(this);
+
+      tabButton.removeClass("is-active");
+      $(this).addClass("is-active");
+      tabContent.removeClass("is-active");
+      tabContent.eq(index).addClass("is-active");
+    });
+  });
+
+  //アコーディオン（FAQ）
+  $(function () {
+    $(".js-accordion__item:first-child .js-accordion__content").css(
+      "display",
+      "block"
+    );
+    $(".js-accordion__item:first-child .js-accordion__title").addClass(
+      "is-open"
+    );
+    $(".js-accordion__title").on("click", function () {
+      $(this).toggleClass("is-open");
+      $(this).next().slideToggle(300);
     });
   });
 });

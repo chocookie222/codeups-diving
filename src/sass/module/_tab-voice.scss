@@ -1,0 +1,63 @@
+@use "global" as *;
+
+.tab-voice {
+  width: 100%;
+}
+
+.tab-voice__list {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  row-gap: rem(16);
+  column-gap: rem(21);
+  @include mq("md") {
+    max-width: 744px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    column-gap: rem(32);
+  }
+}
+
+.tab-voice__button {
+  color: $green40;
+  font-size: rem(14);
+  font-family: $third-font-family;
+  text-transform: uppercase;
+  width: 100%;
+  padding: rem(8) rem(10) rem(3);
+  cursor: pointer;
+  border: 1px solid $green40;
+  @include mq("md") {
+    padding: rem(5) rem(10) rem(5);
+  }
+}
+
+.tab-voice__button.is-active {
+  color: $white;
+  background-color: $green40;
+}
+
+.tab-voice__contents {
+  margin-top: rem(40);
+}
+
+.tab-voice__content {
+  display: none;
+}
+
+.tab-voice__content.is-active {
+  display: block;
+  @include mq("md") {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    row-gap: rem(79);
+    column-gap: rem(40);
+  }
+}
+
+.tab-voice__card:not(:first-child) {
+  margin-top: rem(35);
+  @include mq("md") {
+    margin-top: 0;
+  }
+}

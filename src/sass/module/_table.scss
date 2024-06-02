@@ -1,0 +1,48 @@
+@use "global" as *;
+
+.table {
+  width: 100%;
+}
+
+.table,
+.table__menu,
+.table__price {
+  border: 1px solid $green40;
+  border-collapse: collapse;
+  background-color: $white;
+}
+
+.table__title {
+  color: $white;
+  font-size: 16px;
+  font-family: $third-font-family;
+  font-weight: $bold;
+  text-align: center;
+  line-height: 1.5;
+  background-color: $green40;
+  padding: rem(8);
+}
+
+.table__list {
+}
+
+.table__menu,
+.table__price {
+  color: $black0D;
+  font-size: 16px;
+  font-family: $third-font-family;
+  font-weight: $regular;
+}
+
+.table__menu {
+  width: 69.565%;
+  text-align: center;
+  line-height: 1.5;
+}
+
+.table__price {
+  width: 30.435%;
+  text-align: right;
+  padding: 21px 16px;
+  line-height: 1;
+}

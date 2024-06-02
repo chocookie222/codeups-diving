@@ -1,0 +1,140 @@
+@use "global" as *;
+
+.about {
+}
+
+.about__mv {
+  height: rem(460);
+  background-image: url("../images/common/about-lay.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position-y: center;
+  @include mq("md") {
+    height: rem(548);
+    background-image: url("../images/common/about-lay-pc.jpg");
+  }
+}
+
+.about__title span {
+  text-transform: lowercase;
+}
+
+.about__contents {
+  @include mq("md") {
+    position: relative;
+  }
+}
+
+.about__img {
+  position: relative;
+  margin-top: rem(55);
+  @include mq("md") {
+    margin-top: rem(234);
+  }
+}
+
+.about__img-up {
+  @include mq("md") {
+    position: absolute;
+    width: 37.101%;
+    left: 0;
+    bottom: rem(18);
+    bottom: rem(55);
+  }
+}
+
+.about__img-up img {
+  @include mq("md") {
+    width: 100%;
+    object-fit: cover;
+    aspect-ratio: 400 / 606;
+  }
+}
+
+.about__img-down {
+  display: block;
+  width: 100%;
+  @include mq("md") {
+    max-width: 880px;
+    width: 81.481%;
+    margin-right: 0;
+    margin-left: auto;
+  }
+}
+
+.about__img-down img {
+  width: 100%;
+  object-fit: cover;
+  aspect-ratio: 345 / 228;
+  @include mq("md") {
+    aspect-ratio: 880 / 581;
+  }
+}
+
+.about__texts {
+  @include mq("md") {
+    position: absolute;
+    top: rem(120);
+    right: 0;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: rem(40);
+    max-width: 920px;
+    padding-right: rem(40);
+    padding-left: rem(40);
+  }
+}
+.about__large-text {
+  position: absolute;
+  top: 24px;
+  left: 23px;
+  color: $white;
+  font-size: rem(40);
+  letter-spacing: 0.005em;
+  line-height: 1;
+  @include mq("md") {
+    max-width: 400px;
+    position: static;
+    font-size: rem(80);
+    line-height: 1.25;
+    margin-top: 0;
+  }
+}
+
+.about__text {
+  color: $black0D;
+  font-size: rem(16);
+  line-height: 1.5;
+  letter-spacing: 0.005em;
+  margin-top: rem(44);
+  @include mq("md") {
+    max-width: 400px;
+    color: $white;
+    margin-top: rem(3);
+  }
+}
+
+.about__gallery {
+  margin-top: rem(36);
+  @include mq("md") {
+    margin-top: rem(120);
+  }
+}
+
+.about__gallery-inner.inner {
+}
+
+.about__heading .heading__main {
+  text-indent: rem(7);
+}
+
+.about__heading .heading__main::first-letter {
+  text-transform: capitalize;
+}
+
+.about__modal {
+  margin-top: rem(44);
+  @include mq("md") {
+    margin-top: rem(83);
+  }
+}

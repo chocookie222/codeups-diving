@@ -1,0 +1,22 @@
+@use "global" as *;
+
+.faq {
+}
+
+.faq__mv {
+  height: rem(460);
+  background-image: url("../images/common/faq.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  @include mq("md") {
+    height: rem(548);
+    background-image: url("../images/common/faq-pc.jpg");
+  }
+}
+
+.faq__title span {
+  text-transform: uppercase;
+}
+
+.faq__inner {
+}

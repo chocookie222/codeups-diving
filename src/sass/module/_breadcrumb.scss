@@ -1,0 +1,60 @@
+@use "global" as *;
+
+.breadcrumb {
+  color: $black0D;
+  font-size: rem(14);
+  font-family: $third-font-family;
+  text-transform: uppercase;
+  line-height: 1;
+}
+
+.breadcrumb span {
+  position: relative;
+  display: inline-block;
+  vertical-align: middle;
+  color: $black0D;
+  line-height: 1;
+  width: rem(7);
+  height: rem(7);
+  transform: translateX(-50%) rotate(45deg);
+  margin-left: rem(9);
+  margin-right: rem(6);
+}
+
+.breadcrumb span::before,
+.breadcrumb span::after {
+  position: absolute;
+  content: "";
+  background: currentColor;
+}
+
+.breadcrumb span::before {
+  top: 0;
+  left: 0;
+  right: 0;
+  height: rem(1);
+}
+
+.breadcrumb span::after {
+  top: 0;
+  right: 0;
+  bottom: 0;
+  width: rem(1);
+}
+
+.breadcrumb--white {
+  color: $white;
+  background-color: $green40;
+  padding-top: rem(11);
+  @include mq("md") {
+    padding-top: rem(22);
+  }
+}
+
+.breadcrumb__inner {
+  padding-top: rem(80);
+}
+
+.breadcrumb--white span {
+  color: $white;
+}

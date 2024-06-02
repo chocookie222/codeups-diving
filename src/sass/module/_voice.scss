@@ -1,0 +1,38 @@
+@use "global" as *;
+
+.voice {
+}
+
+.voice__mv {
+  height: rem(460);
+  background-image: url("../images/common/voice-lay.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  @include mq("md") {
+    height: rem(548);
+    background-image: url("../images/common/voice-lay-pc.jpg");
+  }
+}
+
+.voice__inner {
+}
+
+.voice__contents {
+  margin-top: rem(54);
+  @include mq("md") {
+    max-width: 1080px;
+    margin-top: rem(154);
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
+.voice__pagination {
+  margin-top: rem(81);
+  @include mq("md") {
+    max-width: 444px;
+    margin-top: rem(68);
+    margin-right: auto;
+    margin-left: auto;
+  }
+}

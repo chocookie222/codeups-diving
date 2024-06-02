@@ -1,0 +1,54 @@
+@use "global" as *;
+
+.contact {
+}
+
+.contact__mv {
+  height: rem(460);
+  background-image: url("../images/common/contact-lay.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  @include mq("md") {
+    height: rem(548);
+    background-image: url("../images/common/contact-lay-pc.jpg");
+  }
+}
+
+.contact__inner {
+}
+
+.contact__contents {
+  padding-top: rem(56);
+  @include mq("md") {
+    margin-top: rem(97);
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
+.contact__thanks {
+  padding-top: rem(56);
+  padding-bottom: rem(39);
+  @include mq("md") {
+    padding-top: rem(154);
+  }
+}
+
+.contact__finish,
+.contact__message {
+  color: $black0D;
+  font-size: rem(16);
+  font-family: $third-font-family;
+  text-align: center;
+  line-height: 1;
+  letter-spacing: 0;
+}
+
+.contact__message {
+  line-height: 1.45;
+  padding-top: rem(41);
+}
+
+.contact-form {
+  margin-top: rem(57);
+}

@@ -1,10 +1,8 @@
 @use "global" as *;
 
 .top-blog {
-  margin-top: rem(85);
   @include mq("md") {
     position: relative;
-    margin-top: 0;
     padding-top: rem(100);
   }
 }

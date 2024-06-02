@@ -1,0 +1,32 @@
+@use "global" as *;
+
+.price {
+}
+
+.price__mv {
+  height: rem(460);
+  background-image: url("../images/common/price-lay.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  @include mq("md") {
+    height: rem(548);
+    background-image: url("../images/common/price-lay-pc.jpg");
+  }
+}
+
+.price__inner {
+}
+
+.price__contents {
+  margin-top: rem(54);
+  @include mq("md") {
+    max-width: 700px;
+    margin-top: rem(154);
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
+.price__table:not(:first-child) {
+  margin-top: rem(40);
+}

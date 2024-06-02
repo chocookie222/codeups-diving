@@ -2,12 +2,10 @@
 
 .top-price {
   background: $greendd;
-  margin-top: rem(86);
   padding-top: rem(84);
   padding-bottom: rem(83);
   @include mq("md") {
     position: relative;
-    margin-top: rem(150);
     padding-top: rem(94);
     padding-bottom: rem(102);
   }

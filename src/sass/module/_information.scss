@@ -1,0 +1,36 @@
+@use "global" as *;
+
+.information {
+}
+
+.information__mv {
+  height: rem(460);
+  background-image: url("../images/common/info-lay.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  @include mq("md") {
+    height: rem(548);
+    background-image: url("../images/common/info-lay-pc.jpg");
+  }
+}
+
+.information__inner {
+}
+
+.information__contents {
+  margin-top: rem(124);
+  @include mq("md") {
+    max-width: 1080px;
+    margin-top: rem(154);
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
+.information__table:not(:first-child) {
+  margin-top: rem(40);
+}
+
+.information__pagination {
+  margin-top: rem(82);
+}

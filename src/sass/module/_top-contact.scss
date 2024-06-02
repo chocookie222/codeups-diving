@@ -2,9 +2,7 @@
 
 .top-contact {
   position: relative;
-  margin-top: rem(81);
   @include mq("md") {
-    margin-top: rem(140);
     padding-top: rem(10);
   }
 }

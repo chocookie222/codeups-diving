@@ -1,0 +1,74 @@
+@use "global" as *;
+
+.e404 {
+  position: relative;
+  padding-top: rem(64);
+  background-color: $green40;
+  @include mq("md") {
+    padding-top: rem(136);
+  }
+}
+
+.e404::before {
+  content: "";
+  position: absolute;
+  z-index: 100;
+  background: url("../images/common/kujira.svg");
+  background-size: contain;
+  background-repeat: no-repeat;
+  top: rem(-25);
+  left: calc(50% - min(48.5vw, rem(173)));
+  width: rem(345);
+  height: rem(345);
+  @include mq("md") {
+    left: calc(50% - min(48.5vw, rem(540)));
+    width: rem(698);
+    height: rem(698);
+  }
+}
+
+.e404__inner {
+}
+
+.e404__title {
+  color: $white;
+  font-size: rem(80);
+  font-family: $second-font-family;
+  text-align: center;
+  line-height: 1;
+  letter-spacing: 0.5em;
+  text-indent: 0.5em;
+  @include mq("md") {
+    font-size: rem(160);
+  }
+}
+
+.e404__text {
+  color: $white;
+  font-size: rem(16);
+  font-family: $second-font-family;
+  text-align: center;
+  margin-top: rem(3);
+  line-height: 1.5;
+  letter-spacing: 0;
+  @include mq("md") {
+    margin-top: rem(42);
+  }
+}
+
+.e404__button {
+  margin-top: rem(40);
+  text-align: center;
+  @include mq("md") {
+    margin-top: rem(80);
+  }
+}
+
+.e404-footer.footer {
+  margin-top: 0;
+  padding-top: rem(92);
+  background-color: $green40;
+  @include mq("md") {
+    padding-top: rem(230);
+  }
+}

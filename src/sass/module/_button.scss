@@ -79,3 +79,47 @@
   height: 100%;
   transition: 0.3s;
 }
+
+// 白ベース
+.button--white {
+  color: $green40;
+  padding: rem(19) rem(97) rem(19) rem(40);
+  text-transform: capitalize;
+  letter-spacing: 0.05em;
+  border: $white 1px solid;
+  background: $white;
+}
+
+.button--white:hover {
+  color: $white;
+}
+
+.button--white span::after {
+  right: rem(-56);
+  background-image: url("../images/common/button-arrow-green.svg");
+}
+
+.button--white:hover span::after {
+  background-image: url("../images/common/button-arrow.svg");
+}
+
+.button--white.slide::after {
+  background: $green40;
+}
+
+.button--white::before {
+  border: 1px solid $white;
+}
+
+.button--wide {
+  padding: rem(21) rem(111) rem(17) rem(50);
+  // padding-top: px;
+  // padding-right: 88px;
+  // padding-bottom: 19px;
+  // padding-left: 38px;
+}
+
+.button--wide span::after {
+  right: rem(-56);
+  top: 45%;
+}

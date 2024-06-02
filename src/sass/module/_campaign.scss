@@ -1,0 +1,42 @@
+@use "global" as *;
+
+.campaign {
+}
+
+.campaign__mv {
+  height: rem(460);
+  background-image: url("../images/common/campaign-lay.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position-y: center;
+  @include mq("md") {
+    height: rem(548);
+    background-image: url("../images/common/campaign-lay-pc.jpg");
+  }
+}
+
+.campaign__inner {
+}
+
+.campaign__contents {
+  margin-top: rem(55);
+  @include mq("md") {
+    max-width: 1080px;
+    margin-top: rem(154);
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
+.campaign__table:not(:first-child) {
+  margin-top: rem(40);
+}
+
+.campaign__pagination {
+  margin-top: rem(81);
+  @include mq("md") {
+    max-width: 444px;
+    margin-right: auto;
+    margin-left: auto;
+  }
+}

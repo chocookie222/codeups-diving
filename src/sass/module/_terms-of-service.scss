@@ -1,0 +1,96 @@
+@use "global" as *;
+
+.terms-of-service {
+}
+
+.terms-of-service__mv {
+  height: rem(460);
+  background-image: url("../images/common/privacy-policy.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  @include mq("md") {
+    height: rem(548);
+    background-image: url("../images/common/privacy-policy-pc.jpg");
+  }
+}
+
+.terms-of-service__title span {
+  text-transform: lowercase;
+}
+
+.terms-of-service__inner {
+}
+
+.terms-of-service__underlayer {
+  @include mq("md") {
+    max-width: 800px;
+    width: 100%;
+    margin: 0 auto;
+  }
+}
+
+.terms-of-service__heading {
+  color: $black0D;
+  font-size: rem(24);
+  font-family: $third-font-family;
+  font-weight: $medium;
+  line-height: 1;
+  letter-spacing: 0;
+  padding-top: rem(62);
+  @include mq("md") {
+    font-size: rem(32);
+    padding-top: rem(160);
+  }
+}
+
+.terms-of-service__contents {
+  padding-top: rem(45);
+}
+
+.terms-of-service__text {
+  color: $black0D;
+  font-size: rem(16);
+  font-family: $third-font-family;
+  line-height: 2;
+  letter-spacing: 0;
+}
+
+.terms-of-service__wrap {
+  padding-top: rem(32);
+}
+
+ol.terms-of-service__items {
+  padding-left: rem(24);
+  list-style-type: decimal;
+}
+
+ul.terms-of-service__items {
+}
+
+ul .terms-of-service__item {
+  display: inline;
+  padding-left: rem(10);
+}
+
+ul .terms-of-service__item::before {
+  content: "";
+  display: inline-block;
+  position: relative;
+  left: rem(-4);
+  top: rem(-5);
+  width: rem(4);
+  height: rem(4);
+  border-radius: rem(4);
+  background: $black0D;
+}
+
+.terms-of-service__items {
+}
+
+.terms-of-service__item {
+  color: $black0D;
+  font-size: rem(16);
+  font-family: $third-font-family;
+  line-height: 2;
+  letter-spacing: 0;
+}
