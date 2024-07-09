@@ -1,6 +1,12 @@
 @use "global" as *;
 
 .form {
+  @include mq("md") {
+    max-width: 700px;
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+  }
 }
 
 .form__item {
@@ -12,6 +18,9 @@
   background-size: 4px 1px;
   background-repeat: repeat-x;
   background-position: left bottom;
+  @include mq("md") {
+    padding-bottom: rem(42);
+  }
 }
 
 .form__item:not(:first-child) {
@@ -29,6 +38,13 @@
   background-image: none;
 }
 
+.form__item-wrapper {
+  @include mq("md") {
+    display: flex;
+    justify-content: space-between;
+  }
+}
+
 .form__title {
   display: block;
   color: $black0D;
@@ -39,6 +55,9 @@
   letter-spacing: 0;
   margin: 0;
   padding: 0;
+  @include mq("md") {
+    width: 31.429%;
+  }
 }
 
 .form__required {
@@ -65,12 +84,16 @@ textarea {
   font-size: rem(14);
   width: 100%;
   border: 1px solid $green40;
-  margin-top: 16px;
-  padding-top: 12px;
-  padding-right: 12px;
-  padding-bottom: 4px;
-  padding-left: 16px;
+  margin-top: rem(16);
+  padding-top: rem(12);
+  padding-right: rem(12);
+  padding-bottom: rem(4);
+  padding-left: rem(16);
   box-sizing: border-box;
+  @include mq("md") {
+    width: 68.571%;
+    margin-top: 0;
+  }
 }
 
 textarea {
@@ -80,6 +103,9 @@ textarea {
 
 .form__item.form__item--question {
   padding-bottom: rem(15);
+  @include mq("md") {
+    padding-bottom: rem(40);
+  }
 }
 
 input[type="text"]::placeholder,
@@ -91,24 +117,42 @@ input[type="tel"]::placeholder {
   }
 }
 
+.form__select {
+  width: 100%;
+  font-size: rem(12);
+  margin-top: rem(22);
+  padding: rem(13) rem(9) rem(7);
+  border: 1px solid $green40;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  background: $white
+    url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="10" height="10" viewBox="0 0 10 10"><polygon points="0,0 10,0 5,7" fill="%232e7d6b"/></svg>')
+    no-repeat right 10px center;
+  background-size: rem(12);
+  @include mq("md") {
+    width: 68.571%;
+    margin-top: 0;
+  }
+}
+
+.form__checkbox-wrapper {
+  @include mq("md") {
+    width: 68.571%;
+  }
+}
+
 .form__custom-checkbox {
   display: block;
   position: relative;
-  padding-left: rem(24);
+  margin-top: 12px;
+  padding-left: rem(23);
   cursor: pointer;
   font-size: 1em;
   user-select: none;
 }
 
-.form__custom-checkbox:first-of-type {
-  margin-top: rem(20);
-}
-
-.form__custom-checkbox:not(:first-of-type) {
-  margin-top: rem(3);
-}
-
-.custom-checkbox input {
+.form__custom-checkbox input {
   position: absolute;
   opacity: 0;
   cursor: pointer;
@@ -116,14 +160,18 @@ input[type="tel"]::placeholder {
   width: 0;
 }
 
-.custom-checkbox {
-  display: block;
-  position: relative;
-  margin-top: 12px;
-  padding-left: 35px;
-  cursor: pointer;
-  font-size: 1em;
-  user-select: none;
+.form__custom-checkbox:first-of-type {
+  margin-top: rem(20);
+  @include mq("md") {
+    margin-top: 0;
+  }
+}
+
+.form__custom-checkbox:not(:first-of-type) {
+  margin-top: rem(3);
+  @include mq("md") {
+    margin-top: rem(7);
+  }
 }
 
 .checkmark {
@@ -135,9 +183,9 @@ input[type="tel"]::placeholder {
   border: 1px solid $green40;
 }
 
-.custom-checkbox input:checked ~ .checkmark {
+.form__custom-checkbox input:checked ~ .checkmark {
   background-color: white;
-  border-color: #2e7d6b;
+  border-color: $green40;
 }
 
 .checkmark:after {
@@ -146,50 +194,120 @@ input[type="tel"]::placeholder {
   display: none;
 }
 
-.custom-checkbox input:checked ~ .checkmark:after {
+.form__custom-checkbox input:checked ~ .checkmark:after {
   display: block;
 }
 
-.custom-checkbox .checkmark:after {
-  left: 8px;
-  top: 4px;
-  width: 8px;
-  height: 16px;
-  border: solid #d85a1a;
-  border-width: 0 4px 4px 0;
+.form__custom-checkbox .checkmark:after {
+  top: 0;
+  left: rem(4);
+  width: rem(5);
+  height: rem(11);
+  border: solid #c94800;
   transform: rotate(45deg);
+  border-width: rem(0) rem(2) rem(2) rem(0);
 }
 
-select {
-  width: 100%;
-  font-size: rem(12);
-  padding: rem(13) rem(9) rem(7);
-  border: 1px solid $green40;
-  -webkit-appearance: none;
-  -moz-appearance: none;
-  appearance: none;
-  background: white
-    url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="10" height="10" viewBox="0 0 10 10"><polygon points="0,0 10,0 5,7" fill="%232e7d6b"/></svg>')
-    no-repeat right 10px center;
-  background-size: rem(12);
-}
-
-.form__select {
-  margin-top: rem(22);
+.form__item.form__item--consent {
+  @include mq("md") {
+    margin-top: rem(64);
+    text-align: center;
+  }
 }
 
 .form__consent {
+  display: block;
+  position: relative;
   color: $black0D;
   font-size: rem(14);
   font-family: $third-font-family;
   margin-top: rem(17);
   padding-left: rem(61);
   padding-right: rem(30);
+  cursor: pointer;
+  user-select: none;
 }
 
-button[type="submit"] {
+.form__consent input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+  height: 0;
+  width: 0;
 }
 
-button[type="submit"]:hover {
-  // background-color: #1e4f4b;
+.consent-checkmark {
+  position: absolute;
+  top: rem(-1);
+  left: rem(31);
+  height: rem(22);
+  width: rem(22);
+  background-color: $white;
+  border: 1px solid $green40;
+  @include mq("md") {
+    left: rem(165);
+  }
+}
+
+.form__consent input:checked ~ .consent-checkmark {
+  background-color: white;
+  border-color: $green40;
+}
+
+.consent-checkmark:after {
+  content: "";
+  position: absolute;
+  display: none;
+}
+
+.form__consent input:checked ~ .consent-checkmark:after {
+  display: block;
+}
+
+.form__consent .consent-checkmark:after {
+  top: 0;
+  left: rem(6);
+  width: rem(7);
+  height: rem(16);
+  border: solid #c94800;
+  transform: rotate(45deg);
+  border-width: 0px 2px 2px 0;
+}
+
+.form__error {
+  color: #c94800;
+  font-size: rem(14);
+  font-family: $third-font-family;
+  display: flex;
+  justify-content: center;
+}
+
+.form__item.form__item--error:not(:first-child) {
+  margin-top: rem(42);
+  padding-bottom: rem(26);
+  @include mq("md") {
+    margin-top: rem(39);
+  }
+}
+
+.form__item.form__item--error input[type="text"] {
+  border: 1px solid #c94800;
+  background-color: rgba($color: #c94800, $alpha: 0.2);
+  @include mq("md") {
+    width: 68.571%;
+    margin-top: 0;
+  }
+}
+
+.form__item.form__item--error input[type="text"]::placeholder {
+  color: $white;
+  font-size: rem(16);
+  @include mq("md") {
+  }
+}
+
+.form__indent {
+  text-indent: -1em;
+  padding-left: 1em;
+  text-align: left;
 }

@@ -1,0 +1,31 @@
+@use "global" as *;
+
+.card-popular {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: rem(16);
+  padding: rem(16);
+}
+
+.card-popular__img img {
+  width: 100%;
+  aspect-ratio: 121 / 90;
+  object-fit: cover;
+}
+
+.card-popular__container {
+}
+
+.card-popular__time {
+  color: $black0D;
+  font-size: rem(12);
+  line-height: 1;
+}
+
+.card-popular__title {
+  color: $black0D;
+  font-size: rem(16);
+  font-family: $third-font-family;
+  line-height: 1;
+  margin-top: rem(4);
+}

@@ -185,7 +185,7 @@
       </nav>
     </header>
     <main>
-      <!-- thanks -->
+      <!-- contact -->
       <section id="" class="contact underlayer layout-contact-underlayer">
         <div class="contact__mv underlayer__mv">
           <h2 class="contact__title underlayer__title">contact</h2>
@@ -195,28 +195,145 @@
           <div
             class="breadcrumb underlayer__breadcrumb underlayer__breadcrumb--long"
           >
-            <div>top<span></span>お問い合わせ<span></span>送信完了</div>
-          </div>
-          <!-- サンクス -->
-          <div class="contact__thanks">
-            <div class="contact__finish">
-              お問い合わせ内容を送信完了しました。
+            <div>
+              top<span></span>お問い合わせ<span></span>お問い合わせエラー
             </div>
-            <p class="contact__message">
-              このたびは、お問い合わせ頂き<br
-                class="md-none"
-              />誠にありがとうございます。<br />
-              お送り頂きました内容を確認の上、<br
-                class="md-none"
-              />3営業日以内に折り返しご連絡させて頂きます。<br />
-              また、ご記入頂いたメールアドレスへ、<br class="md-none" />
-              自動返信の確認メールをお送りしております。
-            </p>
           </div>
+          <!-- フォーム -->
+          <form
+            class="contact__form contact__form--error form"
+            method="post"
+            action="mail.php"
+          >
+            <!-- 警告 -->
+            <div class="form__error">
+              <p class="form__indent">
+                ※必須項目が入力されていません。<br />
+                入力してください。
+              </p>
+            </div>
+            <!-- 名前フィールド -->
+            <fieldset class="form__item form__item--error">
+              <div class="form__item-wrapper">
+                <legend class="form__title">
+                  お名前<span class="form__required">必須</span>
+                </legend>
+                <input
+                  type="text"
+                  name="name"
+                  placeholder="沖縄&nbsp;&nbsp;&nbsp;&nbsp;太郎"
+                  required
+                />
+              </div>
+            </fieldset>
+            <!-- メールアドレスフィールド -->
+            <fieldset class="form__item">
+              <div class="form__item-wrapper">
+                <legend class="form__title">
+                  メールアドレス<span class="form__required">必須</span>
+                </legend>
+                <input
+                  type="email"
+                  name="email"
+                  placeholder="aaa0000@gmail.com"
+                  required
+                />
+              </div>
+            </fieldset>
+            <!-- 電話番号フィールド -->
+            <fieldset class="form__item">
+              <div class="form__item-wrapper">
+                <legend class="form__title">
+                  電話番号<span class="form__required">必須</span>
+                </legend>
+                <input
+                  type="tel"
+                  name="phone"
+                  placeholder="000-0000-0000"
+                  required
+                />
+              </div>
+            </fieldset>
+            <!-- お問合せ項目 -->
+            <fieldset class="form__item form__item--check">
+              <div class="form__item-wrapper">
+                <legend class="form__title">
+                  お問合せ項目<span class="form__required">必須</span>
+                </legend>
+                <div class="form__checkbox-wrapper">
+                  <label class="form__custom-checkbox">
+                    <input
+                      type="checkbox"
+                      name="inquiry"
+                      value="ダイビング講習について"
+                      checked
+                    />
+                    <span class="checkmark"></span>
+                    ダイビング講習について
+                  </label>
+                  <label class="form__custom-checkbox">
+                    <input
+                      type="checkbox"
+                      name="inquiry"
+                      value="ファンディビングについて"
+                    />
+                    <span class="checkmark"></span>
+                    ファンディビングについて
+                  </label>
+                  <label class="form__custom-checkbox">
+                    <input
+                      type="checkbox"
+                      name="inquiry"
+                      value="体験ダイビングについて"
+                    />
+                    <span class="checkmark"></span>
+                    体験ダイビングについて
+                  </label>
+                </div>
+              </div>
+            </fieldset>
+            <!-- キャンペーン内容を選択 -->
+            <fieldset class="form__item">
+              <div class="form__item-wrapper">
+                <legend class="form__title">キャンペーン</legend>
+                <select id="campaign" name="campaign" class="form__select">
+                  <option value="">キャンペーン内容を選択</option>
+                  <option value="campaign1">キャンペーン1</option>
+                  <option value="campaign2">キャンペーン2</option>
+                  <option value="campaign3">キャンペーン3</option>
+                </select>
+              </div>
+            </fieldset>
+            <!-- お問合せ内容 -->
+            <fieldset class="form__item form__item--question">
+              <div class="form__item-wrapper">
+                <legend class="form__title">
+                  お問合せ内容<span class="form__required">必須</span>
+                </legend>
+                <textarea name="message" rows="8" required></textarea>
+              </div>
+            </fieldset>
+            <!-- 個人情報の取り扱い -->
+            <fieldset class="form__item form__item--consent">
+              <label class="form__consent custom-checkbox">
+                <input type="checkbox" name="privacy" required />
+                <span class="consent-checkmark"></span>
+                個人情報の取り扱いについて同意のうえ送信します。
+              </label>
+            </fieldset>
+            <!-- 送信ボタン -->
+            <button
+              type="submit"
+              href="contact.html"
+              class="button button--wide slide"
+            >
+              <span>send</span>
+            </button>
+          </form>
         </div>
       </section>
     </main>
-    <footer class="footer footer--thankspage">
+    <footer class="footer footer--contact">
       <!-- 上部に戻るボタン -->
       <a href="#header" class="footer__pagetop pagetop">
         <div class="pagetop__img">

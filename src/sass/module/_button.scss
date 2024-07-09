@@ -112,11 +112,9 @@
 }
 
 .button--wide {
+  display: block;
+  margin: 0 auto;
   padding: rem(21) rem(111) rem(17) rem(50);
-  // padding-top: px;
-  // padding-right: 88px;
-  // padding-bottom: 19px;
-  // padding-left: 38px;
 }
 
 .button--wide span::after {

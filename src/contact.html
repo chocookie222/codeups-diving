@@ -198,105 +198,124 @@
             <div>top<span></span>お問い合わせ</div>
           </div>
           <!-- フォーム -->
-          <form class="contact-form form" method="post" action="mail.php">
+          <form class="contact__form form" method="post" action="mail.php">
             <!-- 名前フィールド -->
             <fieldset class="form__item">
-              <legend class="form__title">
-                お名前<span class="form__required">必須</span>
-              </legend>
-              <input
-                type="text"
-                name="name"
-                placeholder="沖縄&nbsp;&nbsp;&nbsp;&nbsp;太郎"
-                required
-              />
+              <div class="form__item-wrapper">
+                <legend class="form__title">
+                  お名前<span class="form__required">必須</span>
+                </legend>
+                <input
+                  type="text"
+                  name="name"
+                  placeholder="沖縄&nbsp;&nbsp;&nbsp;&nbsp;太郎"
+                  required
+                />
+              </div>
             </fieldset>
             <!-- メールアドレスフィールド -->
             <fieldset class="form__item">
-              <legend class="form__title">
-                メールアドレス<span class="form__required">必須</span>
-              </legend>
-              <input
-                type="email"
-                name="email"
-                placeholder="aaa0000@gmail.com"
-                required
-              />
+              <div class="form__item-wrapper">
+                <legend class="form__title">
+                  メールアドレス<span class="form__required">必須</span>
+                </legend>
+                <input
+                  type="email"
+                  name="email"
+                  placeholder="aaa0000@gmail.com"
+                  required
+                />
+              </div>
             </fieldset>
             <!-- 電話番号フィールド -->
             <fieldset class="form__item">
-              <legend class="form__title">
-                電話番号<span class="form__required">必須</span>
-              </legend>
-              <input
-                type="tel"
-                name="phone"
-                placeholder="000-0000-0000"
-                required
-              />
+              <div class="form__item-wrapper">
+                <legend class="form__title">
+                  電話番号<span class="form__required">必須</span>
+                </legend>
+                <input
+                  type="tel"
+                  name="phone"
+                  placeholder="000-0000-0000"
+                  required
+                />
+              </div>
             </fieldset>
             <!-- お問合せ項目 -->
             <fieldset class="form__item form__item--check">
-              <legend class="form__title">
-                お問合せ項目<span class="form__required">必須</span>
-              </legend>
-              <label class="form__custom-checkbox">
-                <input
-                  type="checkbox"
-                  name="inquiry"
-                  value="ダイビング講習について"
-                  checked
-                />
-                <span class="checkmark"></span>
-                ダイビング講習について
-              </label>
-              <label class="form__custom-checkbox">
-                <input
-                  type="checkbox"
-                  name="inquiry"
-                  value="ファンディビングについて"
-                />
-                <span class="checkmark"></span>
-                ファンディビングについて
-              </label>
-              <label class="form__custom-checkbox">
-                <input
-                  type="checkbox"
-                  name="inquiry"
-                  value="体験ダイビングについて"
-                />
-                <span class="checkmark"></span>
-                体験ダイビングについて
-              </label>
+              <div class="form__item-wrapper">
+                <legend class="form__title">
+                  お問合せ項目<span class="form__required">必須</span>
+                </legend>
+                <div class="form__checkbox-wrapper">
+                  <label class="form__custom-checkbox">
+                    <input
+                      type="checkbox"
+                      name="inquiry"
+                      value="ダイビング講習について"
+                      checked
+                    />
+                    <span class="checkmark"></span>
+                    ダイビング講習について
+                  </label>
+                  <label class="form__custom-checkbox">
+                    <input
+                      type="checkbox"
+                      name="inquiry"
+                      value="ファンディビングについて"
+                    />
+                    <span class="checkmark"></span>
+                    ファンディビングについて
+                  </label>
+                  <label class="form__custom-checkbox">
+                    <input
+                      type="checkbox"
+                      name="inquiry"
+                      value="体験ダイビングについて"
+                    />
+                    <span class="checkmark"></span>
+                    体験ダイビングについて
+                  </label>
+                </div>
+              </div>
             </fieldset>
-            <!-- キャンペーン -->
+            <!-- キャンペーン内容を選択 -->
             <fieldset class="form__item">
-              <legend class="form__title">キャンペーン</legend>
-              <!-- <label for="campaign">キャンペーン内容を選択</label> -->
-              <select id="campaign" name="campaign" class="form__select">
-                <option value="">キャンペーン内容を選択</option>
-                <option value="campaign1">キャンペーン1</option>
-                <option value="campaign2">キャンペーン2</option>
-                <option value="campaign3">キャンペーン3</option>
-              </select>
+              <div class="form__item-wrapper">
+                <legend class="form__title">キャンペーン</legend>
+                <select id="campaign" name="campaign" class="form__select">
+                  <option value="">キャンペーン内容を選択</option>
+                  <option value="campaign1">キャンペーン1</option>
+                  <option value="campaign2">キャンペーン2</option>
+                  <option value="campaign3">キャンペーン3</option>
+                </select>
+              </div>
             </fieldset>
             <!-- お問合せ内容 -->
             <fieldset class="form__item form__item--question">
-              <legend class="form__title">
-                お問合せ内容<span class="form__required">必須</span>
-              </legend>
-              <textarea name="message" rows="8" required></textarea>
+              <div class="form__item-wrapper">
+                <legend class="form__title">
+                  お問合せ内容<span class="form__required">必須</span>
+                </legend>
+                <textarea name="message" rows="8" required></textarea>
+              </div>
             </fieldset>
             <!-- 個人情報の取り扱い -->
-            <fieldset class="form__item">
+            <fieldset class="form__item form__item--consent">
               <label class="form__consent custom-checkbox">
                 <input type="checkbox" name="privacy" required />
-                <span class="checkmark"></span>
+                <span class="consent-checkmark"></span>
                 個人情報の取り扱いについて同意のうえ送信します。
               </label>
             </fieldset>
             <!-- 送信ボタン -->
-            <button type="submit" class="button">send</button>
+            <button
+              type="submit"
+              href="contact.html"
+              class="button button--wide slide"
+            >
+              <span>send</span>
+            </button>
           </form>
         </div>
       </section>
