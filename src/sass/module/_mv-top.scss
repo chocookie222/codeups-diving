@@ -1,17 +1,17 @@
 @use "global" as *;
 
-.top-mv {
+.mv-top {
   position: relative;
   height: 100vh;
 }
 
-.top-mv__fade-items {
+.mv-top__fade-items {
 }
 
-.top-mv__fade-item {
+.mv-top__fade-item {
 }
 
-.top-mv__img img {
+.mv-top__img img {
   width: 100%;
   height: 100vh;
   object-fit: cover;
@@ -21,7 +21,7 @@
   }
 }
 
-.top-mv__body {
+.mv-top__body {
   position: absolute;
   z-index: 100;
   top: 50%;
@@ -30,7 +30,7 @@
   text-align: center;
 }
 
-.top-mv__title {
+.mv-top__title {
   color: $white;
   font-size: rem(40);
   font-family: $second-font-family;
@@ -44,7 +44,7 @@
   }
 }
 
-.top-mv__sub-title {
+.mv-top__sub-title {
   color: $white;
   font-size: rem(20);
   @include mq("md") {

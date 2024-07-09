@@ -1,12 +1,12 @@
 @use "global" as *;
 
-.top-voice {
+.voice-top {
   @include mq("md") {
     position: relative;
   }
 }
 
-.top-voice::before {
+.voice-top::before {
   @include mq("md") {
     content: "";
     position: absolute;
@@ -21,7 +21,7 @@
     height: rem(138);
   }
 }
-.top-voice::after {
+.voice-top::after {
   @include mq("md") {
     content: "";
     position: absolute;
@@ -36,7 +36,7 @@
   }
 }
 
-.top-voice__inner {
+.voice-top__inner {
   max-width: 600px;
   width: 100%;
   @include mq("md") {
@@ -44,17 +44,17 @@
   }
 }
 
-.top-voice__heading {
+.voice-top__heading {
 }
 
-.top-voice__cards {
+.voice-top__cards {
   margin-top: rem(42);
   @include mq("md") {
     margin-top: rem(32);
   }
 }
 
-.top-voice__button {
+.voice-top__button {
   margin-top: rem(40);
   text-align: center;
   @include mq("md") {

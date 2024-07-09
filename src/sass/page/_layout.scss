@@ -1,48 +1,48 @@
 @use "global" as *;
 
-.layout-campaign {
+.layout-campaign-top {
   margin-top: rem(44);
   @include mq("md") {
     margin-top: rem(100);
   }
 }
 
-.layout-about {
+.layout-about-top {
   margin-top: rem(85);
   @include mq("md") {
     margin-top: rem(142);
   }
 }
 
-.layout-information {
+.layout-information-top {
   margin-top: rem(75);
   @include mq("md") {
     margin-top: rem(166);
   }
 }
 
-.layout-blog {
+.layout-blog-top {
   margin-top: rem(85);
   @include mq("md") {
     margin-top: 0;
   }
 }
 
-.layout-voice {
+.layout-voice-top {
   margin-top: rem(88);
   @include mq("md") {
     margin-top: rem(144);
   }
 }
 
-.layout-price {
+.layout-price-top {
   margin-top: rem(86);
   @include mq("md") {
     margin-top: rem(150);
   }
 }
 
-.layout-contact {
+.layout-contact-top {
   margin-top: rem(81);
   @include mq("md") {
     margin-top: rem(140);

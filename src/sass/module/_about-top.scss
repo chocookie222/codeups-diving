@@ -1,12 +1,12 @@
 @use "global" as *;
 
-.top-about {
+.about-top {
   @include mq("md") {
     position: relative;
   }
 }
 
-.top-about__inner {
+.about-top__inner {
   max-width: 600px;
   width: 100%;
   @include mq("md") {
@@ -14,10 +14,10 @@
   }
 }
 
-.top-about__heading {
+.about-top__heading {
 }
 
-.top-about__img {
+.about-top__img {
   position: relative;
   margin-top: rem(57);
   @include mq("md") {
@@ -25,7 +25,7 @@
   }
 }
 
-.top-about__img-up {
+.about-top__img-up {
   position: absolute;
   width: 37.101%;
   left: 0;
@@ -35,7 +35,7 @@
   }
 }
 
-.top-about__img-up img {
+.about-top__img-up img {
   width: 100%;
   object-fit: cover;
   aspect-ratio: 128 / 194;
@@ -44,7 +44,7 @@
   }
 }
 
-.top-about__img-down {
+.about-top__img-down {
   display: block;
   width: 81.449%;
   margin-right: 0;
@@ -55,7 +55,7 @@
   }
 }
 
-.top-about__img-down img {
+.about-top__img-down img {
   width: 100%;
   object-fit: cover;
   aspect-ratio: 281 / 186;
@@ -64,7 +64,7 @@
   }
 }
 
-.top-about__contents {
+.about-top__contents {
   @include mq("md") {
     position: absolute;
     top: rem(307);
@@ -79,7 +79,7 @@
     padding-left: rem(40);
   }
 }
-.top-about__large-text {
+.about-top__large-text {
   color: $green40;
   font-size: rem(40);
   letter-spacing: 0.005em;
@@ -94,13 +94,13 @@
   }
 }
 
-.top-about__body {
+.about-top__body {
   @include mq("md") {
     max-width: 400px;
   }
 }
 
-.top-about__text {
+.about-top__text {
   color: $black0D;
   font-size: rem(16);
   line-height: 1.5;
@@ -112,7 +112,7 @@
   }
 }
 
-.top-about__button {
+.about-top__button {
   margin-top: rem(46);
   text-align: center;
   @include mq("md") {
@@ -120,7 +120,7 @@
   }
 }
 
-.top-about::after {
+.about-top::after {
   @include mq("md") {
     content: "";
     position: absolute;

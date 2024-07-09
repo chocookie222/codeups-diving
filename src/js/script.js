@@ -27,7 +27,7 @@ jQuery(function ($) {
   //header 背景
   $(function () {
     $(window).on("scroll", function () {
-      if ($(".top-mv").height() < $(this).scrollTop()) {
+      if ($(".mv-top").height() < $(this).scrollTop()) {
         $(".js-header").addClass("change-color");
       } else if ($(".breadcrumb").height() < $(this).scrollTop()) {
         $(".js-header").addClass("change-color");
@@ -70,8 +70,8 @@ jQuery(function ($) {
     },
     // Navigation arrows
     navigation: {
-      prevEl: ".js-top-campaign-swiper-button-prev",
-      nextEl: ".js-top-campaign-swiper-button-next",
+      prevEl: ".js-campaign-top-swiper-button-prev",
+      nextEl: ".js-campaign-top-swiper-button-next",
     },
   });
 

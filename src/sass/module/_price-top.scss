@@ -1,6 +1,6 @@
 @use "global" as *;
 
-.top-price {
+.price-top {
   background: $greendd;
   padding-top: rem(84);
   padding-bottom: rem(83);
@@ -11,7 +11,7 @@
   }
 }
 
-.top-price::after {
+.price-top::after {
   @include mq("md") {
     content: "";
     position: absolute;
@@ -26,7 +26,7 @@
   }
 }
 
-.top-price__inner {
+.price-top__inner {
   max-width: 600px;
   width: 100%;
   @include mq("md") {
@@ -34,10 +34,10 @@
   }
 }
 
-.top-price__heading {
+.price-top__heading {
 }
 
-.top-price__contents {
+.price-top__contents {
   @include mq("md") {
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -47,19 +47,19 @@
   }
 }
 
-.top-price__left {
+.price-top__left {
   @include mq("md") {
     order: 1;
   }
 }
 
-.top-price__right {
+.price-top__right {
   @include mq("md") {
     order: 2;
   }
 }
 
-.top-price__img {
+.price-top__img {
   display: block;
   margin-top: rem(31);
   @include mq("md") {
@@ -67,7 +67,7 @@
   }
 }
 
-.top-price__img img {
+.price-top__img img {
   width: 100%;
   object-fit: cover;
   aspect-ratio: 345 / 227;
@@ -76,17 +76,17 @@
   }
 }
 
-.top-price__price-list {
+.price-top__price-list {
   margin-top: rem(43);
 }
 
-.top-price__price-list:first-child {
+.price-top__price-list:first-child {
   @include mq("md") {
     margin-top: 0;
   }
 }
 
-.top-price__button {
+.price-top__button {
   margin-top: rem(37);
   text-align: center;
   @include mq("md") {

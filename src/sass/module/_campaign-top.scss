@@ -1,6 +1,6 @@
 @use "global" as *;
 
-.top-campaign {
+.campaign-top {
   padding-bottom: rem(3);
   overflow: hidden;
   @include mq("md") {
@@ -8,7 +8,7 @@
   }
 }
 
-.top-campaign__inner {
+.campaign-top__inner {
   max-width: 600px;
   width: 100%;
   @include mq("md") {
@@ -17,10 +17,10 @@
   }
 }
 
-.top-campaign__heading {
+.campaign-top__heading {
 }
 
-.top-campaign__container {
+.campaign-top__container {
   margin-inline: auto;
   max-width: 600px;
   @include mq("md") {
@@ -29,7 +29,7 @@
     margin-left: 0;
   }
 }
-.top-campaign__swiper {
+.campaign-top__swiper {
   margin-top: rem(32);
   @include mq("md") {
     margin-top: 0;
@@ -37,7 +37,7 @@
   }
 }
 
-.top-campaign__cards {
+.campaign-top__cards {
   display: flex;
   padding-bottom: rem(5);
   @include mq("md") {
@@ -48,11 +48,11 @@
   }
 }
 
-.top-campaign__cards-item {
+.campaign-top__cards-item {
   width: 100%;
 }
 
-.top-campaign__button {
+.campaign-top__button {
   margin-top: rem(32);
   text-align: center;
   @include mq("md") {
@@ -61,7 +61,7 @@
 }
 
 // 左矢印（prev）
-.top-campaign__swiper-button-prev {
+.campaign-top__swiper-button-prev {
   display: none;
   @include mq("md") {
     display: block;
@@ -72,7 +72,7 @@
   }
 }
 
-.top-campaign__swiper-button-prev::after {
+.campaign-top__swiper-button-prev::after {
   @include mq("md") {
     position: absolute;
     content: "";
@@ -86,7 +86,7 @@
 }
 
 // 右矢印（next）
-.top-campaign__swiper-button-next {
+.campaign-top__swiper-button-next {
   display: none;
   @include mq("md") {
     display: block;
@@ -97,7 +97,7 @@
   }
 }
 
-.top-campaign__swiper-button-next::after {
+.campaign-top__swiper-button-next::after {
   @include mq("md") {
     position: absolute;
     content: "";

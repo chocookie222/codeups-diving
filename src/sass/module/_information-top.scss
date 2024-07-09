@@ -1,6 +1,6 @@
 @use "global" as *;
 
-.top-information {
+.information-top {
   padding-top: rem(84);
   padding-bottom: rem(85);
   background-color: $greendd;
@@ -10,12 +10,12 @@
   }
 }
 
-.top-information__inner {
+.information-top__inner {
   max-width: 600px;
   width: 100%;
 }
 
-.top-information__body {
+.information-top__body {
   margin-top: rem(30);
   @include mq("md") {
     display: grid;
@@ -23,19 +23,19 @@
     margin-top: rem(45);
   }
 }
-.top-information__img img {
+.information-top__img img {
   width: 100%;
   object-fit: cover;
   aspect-ratio: 345 / 227;
 }
 
-.top-information__contents {
+.information-top__contents {
   @include mq("md") {
     margin-left: rem(45);
   }
 }
 
-.top-information__title {
+.information-top__title {
   color: $black0D;
   font-size: rem(20);
   font-weight: $bold;
@@ -49,7 +49,7 @@
   }
 }
 
-.top-information__text {
+.information-top__text {
   color: $black0D;
   font-size: rem(16);
   line-height: 1.5;
@@ -60,7 +60,7 @@
   }
 }
 
-.top-information__button {
+.information-top__button {
   margin-top: rem(37);
   text-align: center;
 }
